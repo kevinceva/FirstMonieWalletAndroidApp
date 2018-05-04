@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="naira">Naira</string>
+    <string name="naira_symbol">&#8358;</string>
+    <string name="dollar">$</string>
+</resources>

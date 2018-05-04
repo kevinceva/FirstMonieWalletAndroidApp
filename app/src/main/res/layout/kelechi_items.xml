@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:card_view="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:layout_margin="2dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_items"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/setup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickSetup"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:layout_gravity="center"
+                android:src="@drawable/kelechi_started"
+                />
+
+            <TextView
+                fontPath="fonts/GothamRounded-Book.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Get Started"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#00B2EE"/>
+
+        <LinearLayout
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickLogin"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_user_check"
+                />
+
+            <TextView
+                fontPath="fonts/GothamRounded-Book.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Log In"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="?attr/_ubnColorPrimary"/>
+
+        <LinearLayout
+            android:id="@+id/account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickNewAccount"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_open_account"
+                />
+
+            <TextView
+                fontPath="fonts/GothamRounded-Book.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Open Account"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/gray_black_gradient"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/agent_locator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickLocator"
+            android:orientation="vertical"
+            android:padding="4.0dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:src="@drawable/kelechi_agent"
+                />
+
+            <TextView
+                fontPath="fonts/GothamRounded-Book.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="Locate Services"
+                android:textColor="@color/text_black"
+                android:textSize="9sp"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/asbestos"/>
+
+
+        <LinearLayout
+            android:id="@+id/deals"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickDeals"
+            android:orientation="vertical"
+            android:padding="4.0dp">
+
+            <FrameLayout
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:layout_gravity="center"
+                android:layout_margin="2dp">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_36"
+                    android:layout_height="@dimen/icon_36"
+                    android:layout_gravity="center"
+                    android:src="@drawable/kelechi_cart"
+                    />
+
+                <TextView
+                    android:id="@+id/badge"
+                    fontPath="@string/font_medium"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|top|left"
+                    android:background="@drawable/blue_circle_border"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"/>
+            </FrameLayout>
+
+            <TextView
+                fontPath="fonts/GothamRounded-Book.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="Hot Deals"
+                android:textColor="@color/text_black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/asbestos"/>
+
+
+        <LinearLayout
+            android:id="@+id/news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickNews"
+            android:orientation="vertical"
+            android:padding="4.0dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:src="@drawable/kelechi_news"
+                />
+
+            <TextView
+                fontPath="fonts/GothamRounded-Book.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="Latest News"
+                android:textColor="@color/text_black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/asbestos"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/atm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickATM"
+            android:orientation="vertical"
+            android:padding="4.0dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:src="@drawable/kelechi_atm"
+                />
+
+            <TextView
+                fontPath="fonts/GothamRounded-Book.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="ATM+Branch Locator"
+                android:textColor="@color/text_black"
+                android:textSize="9sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/asbestos"/>
+
+
+        <LinearLayout
+            android:id="@+id/contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickContact"
+            android:orientation="vertical"
+            android:padding="4.0dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:src="@drawable/kelechi_phone"
+                />
+
+            <TextView
+                fontPath="fonts/GothamRounded-Book.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="Contact Us"
+                android:textColor="@color/text_black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/asbestos"/>
+
+
+        <LinearLayout
+            android:id="@+id/weather"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickWeather"
+            android:orientation="vertical"
+            android:padding="4.0dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:src="@drawable/kelechi_weather"
+                />
+
+            <TextView
+                fontPath="fonts/GothamRounded-Book.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="Weather Forecast"
+                android:textColor="@color/text_black"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

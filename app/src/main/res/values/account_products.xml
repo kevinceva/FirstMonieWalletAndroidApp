@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account_products">
+        <item>UnionFuture</item>
+        <item>UnionKorrect DaiDai</item>
+        <item>UnionKorrect – Customer </item>
+        <item>UnionKorrect – Exclusive</item>
+        <item>UnionGoal</item>
+    </string-array>
+    <string-array name="account_products_codes">
+        <item>SA_020</item>
+        <item>SA_017</item>
+        <item>SA_014</item>
+        <item>SA_018</item>
+        <item>SA_015</item>
+    </string-array>
+    <string name="union_future_desc">&#10687;High interest rate on savings\n
+&#10687;Flexible contribution options- minimum contribution of N2, 000 monthly\n
+&#10687;Access to 25% of contribution after 5 years\n
+&#10687;Life insurance from our insurance partners</string>
+</resources>

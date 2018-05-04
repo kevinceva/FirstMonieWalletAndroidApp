@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ceva.ubmobile.core.lifestyle.doctors.DoctorAppoint"
+    tools:showIn="@layout/activity_doctor_appoint">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_page_margin"
+        android:layout_marginRight="@dimen/standard_page_margin"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_booking"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/left_rounded_right_flat_blue_border"
+                    android:button="@android:color/transparent"
+                    android:text="Booking"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/textview_bg"
+                    android:textSize="12sp"/>
+
+
+                <RadioButton
+                    android:id="@+id/rb_history"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/right_rounded_left_flat_blue_border"
+                    android:button="@android:color/transparent"
+                    android:text="History"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/textview_bg"
+                    android:textSize="12sp"/>
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/flight_fields"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_clouds_border"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/edit_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_36"
+                        android:layout_height="@dimen/icon_36"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_first_aid_yellow"/>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:entries="@array/dummy_doctor_types"
+                        android:gravity="left|center"
+                        android:spinnerMode="dialog"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_padding"
+                    android:background="@drawable/rectangle_clouds_border"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/edit_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_36"
+                        android:layout_height="@dimen/icon_36"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_doctor_yellow"/>
+
+                    <Spinner
+
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:entries="@array/dummy_doctors"
+                        android:gravity="left|center"
+                        android:spinnerMode="dialog"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_padding"
+                    android:background="@drawable/rectangle_clouds_border"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/edit_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_36"
+                        android:layout_height="@dimen/icon_36"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_calendar_yellow"/>
+
+                    <EditText
+                        android:id="@+id/fromDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@android:color/transparent"
+                        android:focusable="false"
+                        android:gravity="left|center"
+                        android:hint="Appointment Date"
+                        android:inputType="none"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/return_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_padding"
+                    android:background="@drawable/rectangle_clouds_border"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/edit_padding"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_36"
+                        android:layout_height="@dimen/icon_36"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_calendar_yellow"/>
+
+                    <EditText
+                        android:id="@+id/toDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@android:color/transparent"
+                        android:focusable="false"
+                        android:gravity="left|center"
+                        android:hint="Return Date"
+                        android:inputType="none"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/edit_padding"
+                    android:layout_marginRight="@dimen/edit_padding"
+                    android:layout_marginTop="@dimen/margin_from_button"
+                    android:clickable="true"
+                    android:onClick="onClickNext"
+                    android:text="Book Appointment"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/history_fields"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_36"
+                        android:layout_height="@dimen/icon_36"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_doctor_yellow"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_24"
+                        android:layout_height="@dimen/icon_24"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_calendar_yellow"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/clouds"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:text="Dr. Robert Rono"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:text="01/04/2015"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/clouds"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:text="Dr. Sandhya Mehta"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:text="03/03/2016"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/clouds"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:text="Dr. Karthikeyan Gowrishanker"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:text="23/11/2016"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/clouds"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.NestedScrollView>

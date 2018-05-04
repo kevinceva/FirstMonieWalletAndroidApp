@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_atmlocator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_withback"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/standard_page_margin"
+            android:layout_marginRight="@dimen/standard_page_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_from_button"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Select Account"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/tx_accounts_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/rectangle_clouds_border"
+                    android:entries="@array/dummy_accounts"
+                    android:gravity="center|left"
+                    android:spinnerMode="dropdown"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_padding"
+                    android:text="Churches/NGOs/Others"/>
+
+
+                <Spinner
+                    android:id="@+id/tx_accounts_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/rectangle_clouds_border"
+                    android:entries="@array/dummy_accounts"
+                    android:gravity="center|left"
+                    android:spinnerMode="dropdown"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/amount"/>
+
+                <EditText
+                    style="@style/AppTheme.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:inputType="numberDecimal"/>
+
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_from_button"
+                    android:elevation="5dp"
+                    android:text="Continue"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

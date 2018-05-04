@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tx_types">
+        <item>To my own accounts</item>
+        <item>To other UBN accounts</item>
+        <item>Instant payments to other banks</item>
+        <item>Transfer to Saved Beneficiaries</item>
+        <!--<item>To Wallet</item>-->
+    </string-array>
+    <string-array name="beneficiary_types">
+        <item>Union Bank Account</item>
+        <item>Other Bank</item>
+        <item>Forex Account</item>
+        <item>Airtime Recharge</item>
+    </string-array>
+    <string name="tx_history">Transaction History</string>
+    <string name="payment_desc">Payment Description</string>
+    <string name="beneficiary_account">Saved Beneficiary</string>
+    <string name="account_number">Account Number</string>
+    <string name="other_banks">Bank</string>
+
+    <string-array name="payment_frequency">
+        <item>Select Frequency</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_tran_pin">Enter transaction PIN</string>
+    <string name="enter_token_key">Enter token key</string>
+    <string name="generated_otp">Use the One Time Password Below</string>
+    <string-array name="cheques_pages">
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="cheques_pickup">
+        <item>Pick up by self</item>
+        <item>Pick up by RM</item>
+    </string-array>
+    <string name="wallet_key">wallet</string>
+    <string name="from_account_lbl">From Account</string>
+    <string name="to_account_lbl">To Account</string>
+    <string name="narration_lbl">Payment Reason</string>
+</resources>

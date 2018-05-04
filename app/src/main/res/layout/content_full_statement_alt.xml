@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ceva.ubmobile.core.ui.FullStatement"
+    tools:showIn="@layout/activity_full_statement_alt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="?attr/_ubnColorPrimary"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/acc_type"
+            fontPath="fonts/GothamRounded-Bold.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/standard_page_margin"
+            android:layout_marginRight="@dimen/standard_page_margin"
+            android:layout_marginTop="@dimen/margin_from_button"
+            android:text="Union Silver Account"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="MissingPrefix"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="@dimen/standard_page_margin"
+            android:layout_marginRight="@dimen/standard_page_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/account_number"
+                fontPath="fonts/GothamRounded-Bold.otf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="097942742"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/clouds"
+                tools:ignore="MissingPrefix"/>
+
+            <TextView
+                android:id="@+id/account_bal"
+                fontPath="fonts/GothamRounded-Bold.otf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="N200,000.00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/clouds"
+                tools:ignore="MissingPrefix"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

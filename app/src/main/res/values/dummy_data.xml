@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dummy_accounts">
+        <item>Account to use</item>
+        <item>01200568007002</item>
+        <item>01408595007009</item>
+        <item>01200568007007</item>
+    </string-array>
+    <string name="dummy_amount">&#8358;920,000.00</string>
+    <string name="dummy_account_type">Union Silver Account - *8886</string>
+    <string name="dummy_name">Kiptoo Towett</string>
+    <string name="dummy_lastlogin">06:03 6th Nov 2016</string>
+    <string-array name="dummy_network">
+        <item>Select operator</item>
+        <item>Etisalat</item>
+        <item>Airtel</item>
+        <item>MTN</item>
+        <item>Glo</item>
+    </string-array>
+    <string-array name="dummy_destinations">
+        <item>Johannesburg - JNB</item>
+        <item>Nairobi - NBO</item>
+        <item>Lagos - LOS</item>
+        <item>London - LHR</item>
+    </string-array>
+    <string-array name="dummy_doctor_types">
+        <item>Select speciality</item>
+        <item>None</item>
+        <item>General Physician</item>
+        <item>Dentist</item>
+        <item>Cardiologist</item>
+        <item>Ophthalmologist</item>
+        <item>Oncologist</item>
+        <item>ENT</item>
+        <item>Neurologist</item>
+        <item>Dermatologist</item>
+    </string-array>
+    <string-array name="dummy_doctors">
+        <item>Select doctor</item>
+        <item>Dr. Robert Rono</item>
+        <item>Dr. Sandhya Mehta</item>
+        <item>Dr. Karthikeyan Gowrishanker</item>
+        <item>Dr. Kevin Ngeno</item>
+        <item>Dr. Esther Nafula</item>
+        <item>Dr. June Melly</item>
+        <item>Dr. Samuel Kihara</item>
+    </string-array>
+    <string-array name="dummy_beneficiaries">
+
+        <item>Select beneficiary</item>
+        <item>Titilope Amusan</item>
+        <item>Ibrahim Isedu</item>
+        <item>Collins Okpalaugho</item>
+        <item>Peter Ogheneruemu</item>
+    </string-array>
+    <string name="dummy_single_acc">01408595007009</string>
+    <string-array name="dummy_banks">
+        <item>Select Bank</item>
+        <item>Barclays Bank</item>
+        <item>Standard Chartered</item>
+        <item>Rand Merchant Bank</item>
+        <item>UBA</item>
+        <item>First National Bank</item>
+    </string-array>
+    <string-array name="dummy_branches">
+        <item>Stadium Plaza</item>
+        <item>Tinubu</item>
+        <item>Kakawa</item>
+        <item>Yaba</item>
+    </string-array>
+    <string-array name="horoscopes">
+        <item>Aquarius</item>
+        <item>Pisces</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+    </string-array>
+    <string-array name="dummy_currency">
+        <item>USD</item>
+        <item>JPY</item>
+        <item>CHY</item>
+        <item>BP</item>
+        <item>KES</item>
+        <item>ZAR</item>
+    </string-array>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a sapien eu felis efficitur elementum. Donec malesuada quis ex quis rutrum. Quisque eu cursus mauris. Cras mollis suscipit vestibulum. </string>
+<string name="ipsum">
+                                 <b><ul>TERMS AND CONDITION FOR UNIONMOBILE APPS </ul></b>
+You should read these Terms and Conditions prior to downloading the UnionMobile Apps. By choosing the “I AGREE” button, you are:
+Representing that you are over the age of 18 and have the capacity and authority to bind yourself to the terms of this license and 
+You will be deemed to have read and accepted these terms and conditions when you first log in to the mobile app, and are consenting to be bound by this licence.
+If you do not agree to all the terms and conditions of this licence, or do not represent the foregoing, choose the “ I DISAGREE” button, in which case you will not and may not receive, install or use the application
+1. GENERAL CONDITIONS FOR THE UNIONMOBILE APPS
+UnionMobile is a service offer by Union Bank that enables you to receive information from us and also to transmit instructions to us electronically in relation to an Account, Credit Account or other matter we specify using a mobile device capable of accessing the internet.
+Each time you use Mobile Banking these Terms and Conditions for the UnionMobile Apps apply.
+The UnionMobile App is an extension of facilities offered by UnionOnline. 
+2. ACCESS TO MOBILE BANKING
+Mobile Banking App is only available to registered users of UnionOnline but when downloaded, users must also register their device through the mobile banking app platform.
+You will use your username for internet banking to register and subsequently log in and access Mobile Banking.
+Not all mobile devices are capable of accessing and supporting the Mobile Banking App. It’s your responsibility to ensure any mobile device you use to access mobile Banking is compatible and capable of supporting the mobile banking app. We will not be responsible for any damage or loss to a mobile device as a result of your access or use or attempted access or use of the Mobile Banking App.
+The default daily transfer limit on the Mobile Banking platform is N200, 000. You will require an OTP to perform transactions above N200,000 daily.
+3. AVAILABILITY OF THE MOBILE BANKING APP
+All conditions of the use and charges relating to a mobile device you use to access the Mobile Banking App are your responsibility. We are not liable for any cost you incur to access the Mobile Banking app using a mobile device.
+You should check with the telecommunication provider for mobile device whether you will be able to access the mobile banking app if you travel outside Nigeria. We are not liable for any additional cost you may incur to access Mobile Banking outside of Nigeria.
+
+4. NO WARRANTY
+You expressly acknowledge and agree that use of the application is at your sole risk and that the entire risk as to satisfactory quality, performance, accuracy and effort is with you. To the maximum extent permitted by applicable law, the application and any services performed or provided by the application (“services”) are provided “as is” and “as available”, with all faults and without warranty of any kind, and application provider hereby declaims all warranties and conditions with respect to the application and any services, either express, implied or statutory, including, but not limited to, the implied warranties and\or conditions of merchantability satisfactory quality, of fitness for a particular purpose, of accuracy, of quiet enjoyment, and non-infringement of third party rights. 
+
+Application provider does not warrant against interference with your enjoyment of the application, that is the functions contained in, or services performed or provided by, the application will meet our requirements, that the operation of the application or services will be uninterrupted or error free, or that defects in application or services will be corrected. 
+
+No oral or written information or advice given by application provider or its authorized representative shall create a warranty. Should the application or service prove defective, you assume the entire cost of all necessary servicing, repair or correction. 
+
+Some jurisdictions do not allow the exclusion of implied warranties or limitations on applicable statutory rights of a customer, so the above exclusion and limitations may not apply to you.
+5. USE OF MOBILE BANKING  
+Not all functions and features of Internet Banking are available for Mobile Banking. The features of Mobile banking App include but not limited to:
+Balance enquiry
+Account opening
+Account activity enquiry
+Funds Transfer
+Make donations
+Bills payments 
+Life styles 
+View  and make investments 
+Get insurance quote
+
+
+The Login ID and Password are required to access the mobile banking service provided by this platform. The Pin is required together with the login ID and Password to successfully carry out Bills Payments or Funds Transfer transactions on this platform. Under no circumstances shall you allow any body access to your account through the service by divulging your Login ID, Password and Pin to a third party, as you shall be sole liable for such disclosure.
+
+You understand that your Login ID, Password and Pin are used to give instructions or communicate electronically with the bank and accordingly undertake:
+That Union Bank Plc is irrevocably authorized to comply with any instructions given to the bank through this platform and it is agreed that such instruction shall irrevocably deemed to be your instruction.
+You hereby agree to change your password or Pin immediately you are made aware that it’s known to someone else.
+Union bank Plc is exempted from any form of liability whatsoever for complying with any or all instructions(S) given by means of the customer’s Login ID, Password and Pin accordingly, the bank shall not be responsible for any fraudulent, duplicate or erroneous instructions given by means of customer’s Login details.
+Union Bank Plc is expressly exempted from any liability arising from unauthorized access to your account and/or data as contained in the bank’s  records, which arises as a result of your inability and/or otherwise to safeguard your Login details or failure to log out of the application completely by allowing on screen display of your account information
+Union Bank Plc is relived of any liability as regards breach of duty of secrecy arising out of your inability to observe and maintain the secrecy of your Login ID, Password and Pin as the usage of your Password by a third party shall be interpreted to be your consent.
+Union Bank Plc is further relieved of any liability for loss that may arise as a result of transfer of ownership of the device on which the UnionMobile Apps is installed either by theft, gift or by any other means.
+Union Bank Plc is also relieved of any liability for loss that may arise as a result of acts of hackers and other unauthorized access to your account via the platform.
+You hereby agree to urgently notify Union Bank Plc immediately upon your suspicion that the confidentiality of your Login ID, Password and Pin are compromised.
+You hereby irrevocably accept responsibility and shall bear liability for any fraud, loss and/or liability to the bank or third party arising from usage of your login ID, Password and Pin on this platform.
+
+</string>
+</resources>

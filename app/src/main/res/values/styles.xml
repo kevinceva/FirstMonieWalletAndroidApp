@@ -1,0 +1,168 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="MyMaterialTheme.Base.AppBarOverlay"
+           parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="MyMaterialTheme.Base.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="CustomTabTextStyle" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontPath">fonts/GothamRounded-Book.otf</item>
+    </style>
+
+    <style name="ThemeUpWhite" parent="@style/AppTheme">
+        <item name="android:homeAsUpIndicator">@drawable/ic_back_caret_white</item>
+    </style>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="background">@color/clouds</item>
+        <item name="android:background">@color/clouds</item>
+        <item name="android:textColorPrimary">@color/concrete</item>
+        <item name="android:textColorSecondary">@color/asbestos</item>
+        <item name="android:textColor">@color/concrete</item>
+    </style>
+
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.TextView">
+        <item name="fontPath">fonts/GothamRounded-Book.otf</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textColor">@color/ubn_black</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="FormLabels" parent="android:Widget.TextView">
+        <item name="fontPath">fonts/GothamRounded-Medium.otf</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ubn_black</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_gravity">center|left</item>
+    </style>
+
+    <style name="FormH1Label" parent="android:Widget.TextView">
+        <item name="fontPath">fonts/GothamRounded-Medium.otf</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ubn_black</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="FormH2Label" parent="android:Widget.TextView">
+        <item name="fontPath">fonts/GothamRounded-Medium.otf</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ubn_black</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="AppTheme.Widget.EditText" parent="Widget.AppCompat.EditText">
+        <item name="fontPath">fonts/GothamRounded-Book.otf</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textColor">@color/ubn_black</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/rectangle_clouds_border</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="AppTheme.Widget.Button" parent="android:style/Widget.Button">
+        <item name="fontPath">fonts/GothamRounded-Light.otf</item>
+        <item name="android:textColor">?attr/_ubnColorButtonText</item>
+        <item name="android:background">?attr/_ubnColorButtonBackground</item>
+        <item name="android:layout_height">@dimen/edit_height</item>
+        <item name="android:padding">@dimen/edit_padding</item>
+    </style>
+
+    <style name="AppTheme.BrownTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="fontPath">fonts/GothamRounded-Light.otf</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/union_black</item>
+        <item name="android:layout_height">@dimen/edit_height</item>
+        <item name="android:padding">@dimen/edit_padding</item>
+    </style>
+
+    <style name="AppTheme.Widget.Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="fontPath">fonts/GothamRounded-Book.otf</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textColor">@color/ubn_black</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/spin_patch</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_drawable</item>
+    </style>
+
+    <style name="ActionSheetStyleiOS7">
+        <item name="actionSheetBackground">@android:color/transparent</item>
+        <item name="cancelButtonBackground">@drawable/slt_as_ios7_cancel_bt</item>
+        <item name="otherButtonTopBackground">@drawable/slt_as_ios7_other_bt_top</item>
+        <item name="otherButtonMiddleBackground">@drawable/slt_as_ios7_other_bt_middle</item>
+        <item name="otherButtonBottomBackground">@drawable/slt_as_ios7_other_bt_bottom</item>
+        <item name="otherButtonSingleBackground">@drawable/slt_as_ios7_other_bt_single</item>
+        <item name="cancelButtonTextColor">#1E82FF</item>
+        <item name="otherButtonTextColor">#1E82FF</item>
+        <item name="actionSheetPadding">10dp</item>
+        <item name="otherButtonSpacing">0dp</item>
+        <item name="cancelButtonMarginTop">10dp</item>
+        <item name="actionSheetTextSize">12sp</item>
+    </style>
+
+    <style name="full_screen_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <!-- Your custom ActionBar Style -->
+
+    <style name="CustomActionBar" parent="@style/MyMaterialTheme.Base">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+
+        <item name="android:textColorPrimary">@color/concrete</item>
+        <item name="android:textColorSecondary">@color/asbestos</item>
+        <item name="android:textColor">@color/concrete</item>
+
+    </style>
+    <!-- Blue Action Bar -->
+    <style name="MyTheme.ActionBar" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundStacked">@android:color/transparent</item>
+        <item name="android:displayOptions">showTitle</item>
+        <!--<item name="android:textColorPrimary">@color/clouds</item>
+        <item name="android:textColorSecondary">@color/clouds</item>
+        <item name="android:textColor">@color/clouds</item>-->
+        <item name="subtitleTextColor">@color/clouds</item>
+        <item name="titleTextColor">@color/clouds</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+
+    </style>
+
+</resources>

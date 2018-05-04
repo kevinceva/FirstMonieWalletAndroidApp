@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/standard_page_margin"
+    android:layout_marginRight="@dimen/standard_page_margin"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ceva.ubmobile.core.ui.transfers.OwnAccountsActivity"
+    tools:showIn="@layout/activity_own_accounts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="@dimen/margin_from_button"
+        android:padding="@dimen/edit_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/FormLabels"
+                android:text="@string/from_account_lbl"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_clouds_border">
+
+                <Spinner
+                    android:id="@+id/tx_accounts_from"
+                    style="@style/AppTheme.Widget.Spinner"
+                    android:spinnerMode="dropdown"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/FormLabels"
+                android:text="@string/to_account_lbl"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_clouds_border">
+
+                <Spinner
+                    android:id="@+id/tx_accounts_to"
+                    style="@style/AppTheme.Widget.Spinner"
+                    android:spinnerMode="dropdown"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/FormLabels"
+                android:text="Amount"/>
+
+            <EditText
+                android:id="@+id/txamount"
+                style="@style/AppTheme.Widget.EditText"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/FormLabels"
+                android:text="@string/narration_lbl"/>
+
+
+            <EditText
+                android:id="@+id/tx_reference"
+                style="@style/AppTheme.Widget.EditText"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp">
+
+        <include layout="@layout/confirm_cancel_buttons"/>
+    </LinearLayout>
+</FrameLayout>

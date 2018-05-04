@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="1dp">
+
+        <include
+            layout="@layout/toolbar_withback"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@id/page_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="0.9"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+
+                    <TextView
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Utility/Products"/>
+
+                    <Spinner
+                        android:id="@+id/productSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_clouds_border"
+                        android:entries="@array/dummy_network"/>
+
+                    <TextView
+                        android:id="@+id/customField1"
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FlatNumber"/>
+
+                    <EditText
+                        android:id="@+id/customField1Val"
+                        style="@style/AppTheme.Widget.EditText"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ems="10"/>
+
+                    <LinearLayout
+                        android:id="@+id/field_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/customField2"
+                            style="@style/FormLabels"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="FlatNumber"/>
+
+                        <EditText
+                            android:id="@+id/customField2Val"
+                            style="@style/AppTheme.Widget.EditText"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:ems="10"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Amount"/>
+
+                    <EditText
+                        android:id="@+id/amount"
+                        style="@style/AppTheme.Widget.EditText"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/amount"
+                        android:inputType="numberDecimal"/>
+
+                    <TextView
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fee"/>
+
+                    <EditText
+                        android:id="@+id/fee"
+                        style="@style/AppTheme.Widget.EditText"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:hint="Fee"
+                        android:inputType="none"/>
+
+                    <TextView
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Number"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:layout_gravity="center_horizontal"
+
+                        android:orientation="horizontal"
+
+                        android:padding="2dp">
+
+                        <EditText
+                            android:id="@+id/phoneNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:background="@drawable/rectangle_clouds_border"
+                            android:ems="10"
+                            android:hint="@string/mobile_number"
+                            android:inputType="phone"/>
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.7"
+                            android:gravity="center"
+                            android:text="Self"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Account to debit"/>
+
+                    <Spinner
+                        android:id="@+id/account"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_clouds_border"
+                        android:entries="@array/dummy_accounts"/>
+
+                    <include layout="@layout/transaction_pin_entry"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/confirmation_layout"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="25dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/buttonCancel"
+                        style="@style/AppTheme.Widget.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="@color/ubn_yellow"
+                        android:text="@string/label_cancel"/>
+
+                    <Button
+                        android:id="@+id/buttonRecharge"
+                        style="@style/AppTheme.Widget.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="@color/ubn_yellow"
+                        android:text="@string/label_confirm"/>
+
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/bottom_menu"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

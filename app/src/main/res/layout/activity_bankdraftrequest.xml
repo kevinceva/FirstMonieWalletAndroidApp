@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_atmlocator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_withback"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/standard_page_margin"
+            android:layout_marginRight="@dimen/standard_page_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/standard_page_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/input_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/form_beneficiary_name"/>
+
+                    <EditText
+                        android:id="@+id/beneficiary_name"
+                        style="@style/AppTheme.Widget.EditText"
+                        android:layout_width="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/amount"/>
+
+                    <EditText
+                        android:id="@+id/amount"
+                        style="@style/AppTheme.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:inputType="numberDecimal"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Account Number"/>
+
+                    <Spinner
+                        android:id="@+id/sp_accounts"
+
+                        style="@style/AppTheme.Widget.EditText"/>
+
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bank Branch"/>
+
+
+                    <com.ceva.ubmobile.core.ui.widgets.CustomSearchableSpinner
+                        android:id="@+id/sp_branches"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:background="@drawable/rectangle_clouds_border"
+                        android:entries="@array/dummy_branches"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_enter_security_word"/>
+
+                    <EditText
+                        android:id="@+id/security_word"
+                        style="@style/AppTheme.Widget.EditText"
+                        android:layout_width="match_parent"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/confirm_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+
+                            android:gravity="center|left"
+                            android:text="@string/account_number"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/account_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:textSize="12sp"
+                            android:textStyle="normal|bold"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/clouds"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:text="@string/form_beneficiary_name"
+                            android:textSize="12sp"
+                            tools:text="@string/form_beneficiary_name"/>
+
+                        <TextView
+                            android:id="@+id/beneficiary_name_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="50"
+                            android:textSize="12sp"
+                            android:textStyle="normal|bold"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/clouds"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:text="@string/amount"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/amount_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="000000"
+                            android:textSize="12sp"
+                            android:textStyle="normal|bold"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/clouds"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:text="@string/label_security_word"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/branch_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="Union Bank"
+                            android:textSize="12sp"
+                            android:textStyle="normal|bold"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/clouds"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/clouds"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/security_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <include layout="@layout/transaction_pin_entry"/>
+                </LinearLayout>
+
+                <include layout="@layout/confirm_cancel_buttons"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

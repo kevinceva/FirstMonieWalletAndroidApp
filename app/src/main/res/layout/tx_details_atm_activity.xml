@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="100">
+
+    <!-- ?attr/_ubnColorPrimaryDark -->
+    <FrameLayout
+        android:id="@+id/top_part"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:background="@drawable/tx_map_details_gradient">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/goback"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="8dp"
+                android:src="@drawable/ic_close_white_24dp"/>
+
+            <ImageView
+                android:id="@+id/status_state_img"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/atm_tx_off"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/status_state_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_white">
+
+                <LinearLayout
+                    android:id="@+id/take_me_there"
+                    android:layout_width="200dp"
+                    android:layout_height="42dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_navigation"/>
+
+                    <com.zercomsystems.android.unionatmlocator.views.TextViewPlus
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Take me there"
+                        android:textColor="?attr/_ubnColorPrimary"
+                        android:textSize="18sp"
+                        app:customFont="@string/font_medium"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <!--android:layout_margin="8dp"-->
+            <ImageView
+                android:id="@+id/refresh_this_atm"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/ic_action_refresh_atm"/>
+
+
+            <com.zercomsystems.android.unionatmlocator.views.TextViewPlus
+                android:id="@+id/address_to_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text=" "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:customFont="@string/font_medium"/>
+
+
+            <com.zercomsystems.android.unionatmlocator.views.TextViewPlus
+                android:id="@+id/atm_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dp"
+                android:text=" "
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:customFont="@string/font_medium"/>
+
+
+            <com.zercomsystems.android.unionatmlocator.views.TextViewPlus
+                android:id="@+id/atm_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:text=" "
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:customFont="@string/font_medium"/>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_of_atms"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:background="@color/white"/>
+
+
+</LinearLayout>

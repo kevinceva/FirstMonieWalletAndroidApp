@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow"/>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools"/>
+    </group>-->
+    <item android:title="@string/drawer_services">
+        <menu>
+
+            <!--<item
+                android:id="@+id/nav_lifestyle"
+                android:title="@string/drawer_lifestyle"/>
+            <item
+                android:id="@+id/nav_social"
+                android:title="Link Social Media"/>
+            <item
+                android:id="@+id/nav_cash"
+                android:title="@string/drawer_cash"/>-->
+            <!--   <item
+                   android:id="@+id/nav_beneficiaries"
+                   android:title="Saved Beneficiaries"/>-->
+            <item
+                android:id="@+id/nav_profile"
+                android:title="@string/drawer_profile"/>
+            <!--<item
+                android:id="@+id/nav_receipts"
+                android:title="Receipts"/>-->
+            <!--<item
+                android:id="@+id/nav_profile_act"
+                android:title="Profile Activation"/>-->
+            <item
+                 android:id="@+id/nav_receipts"
+                 android:title="Receipts"/>
+            <!-- <item
+                android:id="@+id/nav_flutter"
+                android:title="Flutterwave"/>
+            <item
+                android:id="@+id/nav_merchant"
+                android:title="Pay Merchants"/>-->
+            <item
+                android:id="@+id/nav_invite"
+                android:title="@string/label_invite_friend"/>
+            <item
+                android:id="@+id/nav_news"
+                android:title="@string/label_news_go"/>
+
+            <!--<item
+                android:id="@+id/nav_cards"
+                android:title="@string/drawer_cards"/>-->
+            <!--
+                        <item
+                            android:id="@+id/nav_cheques"
+                            android:title="Cheque Book Request"/>
+
+                        <item
+                            android:id="@+id/nav_bankdrafts"
+                            android:title="Bank Draft Request"/>-->
+
+            <!--<item
+                android:id="@+id/nav_newaccount"
+                android:title="@string/drawer_accountopen"/>-->
+            <!--<item
+                android:id="@+id/nav_bancassurance"
+                android:title="@string/drawer_bancassurance"/>
+            <item
+                android:id="@+id/nav_donations"
+                android:title="@string/drawer_donations"/>-->
+            <!--<item
+                android:id="@+id/nav_investments"
+                android:title="@string/drawer_investments"/>-->
+
+        </menu>
+    </item>
+    <item android:title="@string/drawer_communicate">
+        <menu>
+            <!--<item
+                android:id="@+id/nav_inbox"
+                android:title="@string/drawer_inbox"/>-->
+            <item
+                android:id="@+id/nav_locator"
+                android:title="ATM + Branch Locator"/>
+
+            <item
+                android:id="@+id/nav_call"
+                android:title="Call"/>
+            <item
+                android:id="@+id/nav_email"
+                android:title="Email"/>
+            <!-- <item
+                 android:id="@+id/nav_facebook"
+                 android:title="Facebook"/>
+             <item
+                 android:id="@+id/nav_twitter"
+                 android:title="Twitter"/>-->
+            <item
+                android:id="@+id/nav_whatsapp"
+                android:title="Whatsapp"/>
+
+            <!--<item
+                android:id="@+id/nav_help"
+                android:title="@string/drawer_help"/>-->
+
+        </menu>
+    </item>
+
+
+</menu>

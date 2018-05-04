@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_margin="10dp"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/ubn_yellow"
+        android:elevation="2.0dp"
+        android:text="Ok"
+        android:textColor="@color/asbestos"/>
+
+    <View
+        android:layout_width="@dimen/edit_padding"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/ubn_yellow"
+        android:elevation="2.0dp"
+        android:text="Cancel"
+        android:textColor="@color/asbestos"/>
+
+</LinearLayout>

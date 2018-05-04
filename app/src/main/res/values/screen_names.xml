@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screen_sign_in">Sign In</string>
+    <string name="screen_landing_page">Landing Page</string>
+    <string name="screen_get_started">Get Started</string>
+    <string name="screen_open_account">New Account Opening</string>
+    <string name="screen_hot_deals">Hot Deals</string>
+    <string name="screen_news">Latest News</string>
+    <string name="screen_locate_agent">Agent Locator</string>
+    <string name="screen_weather">Weather Forecast</string>
+    <string name="screen_receipts">Receipts</string>
+    <string name="screen_withinbank">Within Bank</string>
+    <string name="screen_own_accounts">Own Accounts</string>
+    <string name="screen_other_banks">Other Banks</string>
+</resources>

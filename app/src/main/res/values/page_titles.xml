@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cardless_withdrawals">Cardless Withdrawals</string>
+    <string name="cash">Cash</string>
+    <string name="mvisa">mVisa</string>
+    <string name="passwordrecovery">Password Recovery</string>
+    <string name="page_add_beneficiary">Add Beneficiary</string>
+    <string name="page_cheque_book">Cheque Book Request</string>
+    <string name="page_bank_draft">Bank Draft Request</string>
+    <string name="page_investments">Investments</string>
+    <string name="page_account_open">Account Opening</string>
+    <string name="page_ministatement">Ministatement</string>
+    <string name="page_hot_deals">Union Deals</string>
+</resources>

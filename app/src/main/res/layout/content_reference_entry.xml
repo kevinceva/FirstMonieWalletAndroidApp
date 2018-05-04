@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ceva.ubmobile.core.ui.merchantpayments.ReferenceEntry"
+    tools:showIn="@layout/activity_reference_entry">
+
+    <TextView
+        android:id="@+id/merchantName"
+        style="@style/FormLabels"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Merchant Name"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/standard_page_margin"
+        android:layout_marginRight="@dimen/standard_page_margin">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    style="@style/label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Account To Debit"
+                    android:textAllCaps="false"/>
+
+                <Spinner
+                    android:id="@+id/account"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/rectangle_clouds_border"/>
+
+                <TextView
+                    style="@style/label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reference Code"
+                    android:textAllCaps="false"/>
+
+                <EditText
+                    android:id="@+id/reference"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/rectangle_clouds_border"
+                    android:ems="10"
+                    android:hint="Enter Reference Code"
+                    android:inputType="textPersonName"
+                    android:padding="4dp"
+                    />
+
+                <Button
+                    android:id="@+id/btnStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Check Status"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

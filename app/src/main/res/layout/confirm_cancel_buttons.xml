@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/buttonsField"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginTop="25dp"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btncancel"
+        style="@style/AppTheme.Widget.Button"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="@string/label_cancel"
+        android:background="?attr/_ubnColorButtonBackground"
+        android:textColor="?attr/_ubnColorButtonText"/>
+
+    <View
+        android:layout_width="@dimen/edit_padding"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:background="?attr/_ubnColorButtonBackground"
+        android:textColor="?attr/_ubnColorButtonText"
+        android:id="@+id/btnContinue"
+        style="@style/AppTheme.Widget.Button"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="@string/label_continue"/>
+
+
+</LinearLayout>

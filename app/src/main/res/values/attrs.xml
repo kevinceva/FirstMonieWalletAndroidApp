@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViewPlus">
+        <attr name="customFont" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="UnionThemes">
+        <attr name="_ubnActionBarBackground" format="color"/>
+        <attr name="_ubnColorPrimary" format="color"/>
+        <attr name="_ubnColorPrimaryDark" format="color"/>
+        <attr name="_ubnColorAccent" format="color"/>
+        <attr name="_ubnColorDivider" format="color"/>
+        <attr name="_ubnColorButtonBackground" format="color"/>
+        <attr name="_ubnColorButtonText" format="color"/>
+        <attr name="_ubnColorDashboardBox" format="color"/>
+        <attr name="_ubnColorDashboardBoxText" format="color"/>
+    </declare-styleable>
+</resources>

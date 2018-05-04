@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical"
+              tools:context=".core.ui.beneficiaries.Beneficiaries">
+
+    <include layout="@layout/toolbar_withback"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/standard_page_margin"
+        android:layout_marginRight="@dimen/standard_page_margin"
+        android:layout_marginTop="@dimen/margin_from_button"
+        android:background="@drawable/rounded_rectangle_blue"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_union"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:text="Union Bank"
+            android:textAlignment="center"
+            android:textColor="@drawable/textview_bg"/>
+
+        <RadioButton
+            android:id="@+id/rb_other"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:button="@android:color/transparent"
+            android:text="Other Banks"
+            android:textAlignment="center"
+            android:textColor="@drawable/textview_bg"/>
+
+        <RadioButton
+            android:id="@+id/rb_forex"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:button="@android:color/transparent"
+            android:text="Forex"
+            android:textAlignment="center"
+            android:textColor="@drawable/textview_bg"/>
+
+    </RadioGroup>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginBottom="@dimen/margin_from_button"
+        android:layout_marginLeft="@dimen/standard_page_margin"
+        android:layout_marginRight="@dimen/standard_page_margin"
+        android:layout_marginTop="@dimen/margin_from_button"
+        android:background="@drawable/rectangle_clouds_border"
+        android:padding="@dimen/edit_padding"
+        app:queryHint="search by name"/>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_from_button"
+        android:layout_marginLeft="@dimen/standard_page_margin"
+        android:layout_marginRight="@dimen/standard_page_margin"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle_clouds_border"
+        android:padding="4dp"
+        android:layout_marginBottom="@dimen/margin_from_button"
+        android:layout_height="wrap_content">
+
+
+
+    <com.ceva.ubmobile.core.ui.widgets.CustomSearchableSpinner
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_height="45dp"/>
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="@dimen/icon_40"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_search_blue"
+            android:layout_height="@dimen/icon_40"/>
+    </LinearLayout>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/beneficiary_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/standard_page_margin"
+            android:layout_marginRight="@dimen/standard_page_margin"/>
+
+        <ImageButton
+            android:id="@+id/beneficiary_add"
+            android:layout_width="@dimen/icon_48"
+            android:layout_height="@dimen/icon_48"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_plus_yellow"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

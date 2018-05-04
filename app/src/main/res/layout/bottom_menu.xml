@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_menu"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/_ubnColorPrimary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_left"
+            android:layout_width="@dimen/icon_48"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="?attr/_ubnColorPrimary"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_leftarrow_white"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/btn_right"
+            android:layout_width="@dimen/icon_48"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="?attr/_ubnColorPrimary"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_rightarrow_white"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:background="?attr/_ubnColorPrimary"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/accountsLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onAccountClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageAccounts"
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:clickable="true"
+                android:onClick="onAccountClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_wallet_white"/>
+
+            <TextView
+                android:id="@+id/textAccounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="onAccountClick"
+                android:text="Accounts"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/payLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onPayClick"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/imagePay"
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:background="?attr/_ubnColorPrimary"
+                android:clickable="true"
+                android:onClick="onPayClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_pay_white"/>
+
+            <TextView
+                android:id="@+id/textPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="onPayClick"
+                android:text="Pay Bills"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/transfersLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onTransfersClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageTransfers"
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:clickable="true"
+                android:onClick="onTransfersClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_transfers_white"/>
+
+            <TextView
+                android:id="@+id/textTransfers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="onTransfersClick"
+                android:text="Send Money"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/helpLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onHelpClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageMvisa"
+                android:layout_width="@dimen/icon_36"
+                android:layout_height="@dimen/icon_36"
+                android:clickable="true"
+                android:onClick="onHelpClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_help_white"/>
+
+            <TextView
+                android:id="@+id/textHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="onHelpClick"
+                android:text="@string/drawer_help"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>-->
+</LinearLayout>

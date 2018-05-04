@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:background="#99000000"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ubn_logo"
+        android:visibility="gone"
+        app:civ_border_color="?attr/_ubnColorPrimary"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/clouds"
+        app:civ_shadow_radius="0"/>
+
+    <TextView
+        fontPath="@string/font_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/LOADING"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="5dp"
+            app:indicatorName="LineScaleIndicator"
+            />
+
+        <!--<ProgressBar
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle"
+            android:indeterminateDrawable="@drawable/progress"/>-->
+        <!--<ch.halcyon.squareprogressbar.SquareProgressBar
+            android:id="@+id/sprogressbar"
+            android:layout_width="122dp"
+            android:layout_height="122dp"
+            android:layout_gravity="center"
+            android:gravity="center" >
+        </ch.halcyon.squareprogressbar.SquareProgressBar>-->
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

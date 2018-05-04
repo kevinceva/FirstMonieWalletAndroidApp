@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="1dp">
+
+        <include
+            layout="@layout/toolbar_withback"/>
+
+        <LinearLayout
+            android:id="@+id/confirmLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/standard_page_margin"
+            android:layout_marginRight="@dimen/standard_page_margin"
+            android:orientation="vertical"
+            android:padding="@dimen/edit_padding"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/loadingLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:id="@+id/transactionProgressBar"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"/>
+
+                        <ImageView
+                            android:id="@+id/transaction_success_fail"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/transactionMessage"
+                            fontPath="fonts/GothamRounded-Bold.otf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:gravity="center"
+                            android:text="Processing request..."
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/confirm_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+
+                <include
+
+                    layout="@layout/confirm_cancel_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/standard_page_margin"
+                    android:layout_marginRight="@dimen/standard_page_margin"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pinFields"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/passcodelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/standard_page_margin"
+                android:layout_marginRight="@dimen/standard_page_margin"
+                android:orientation="vertical"
+                android:padding="@dimen/edit_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|top"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_lock_pin"/>
+
+                    <TextView
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Enter Transaction PIN"/>
+
+                    <com.andrognito.pinlockview.IndicatorDots
+                        android:id="@+id/indicator_dots"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        app:dotDiameter="12dp"
+                        app:dotEmptyBackground="@drawable/empty_dot"
+                        app:dotFilledBackground="@drawable/filled_dot"/>
+
+                    <com.andrognito.pinlockview.PinLockView
+                        android:id="@+id/pin_lock_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/indicator_dots"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        app:keypadButtonSize="72dp"
+                        app:keypadDeleteButtonDrawable="@drawable/ic_delete"
+                        app:keypadShowDeleteButton="true"
+                        app:keypadTextColor="@color/secondary_text"
+                        app:keypadTextSize="18sp"/>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/standard_page_margin"
+                    android:layout_marginRight="@dimen/standard_page_margin"
+                    android:text="Use Fingerprint Authentication"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

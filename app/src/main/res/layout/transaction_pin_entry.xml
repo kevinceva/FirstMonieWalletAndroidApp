@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/transactionpin_fields"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView44"
+        style="@style/FormLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaction PIN"/>
+
+    <EditText
+        android:id="@+id/tran_pin"
+        style="@style/AppTheme.Widget.EditText"
+        android:ems="10"
+        android:inputType="number|numberPassword"
+        android:maxLength="4"/>
+</LinearLayout>

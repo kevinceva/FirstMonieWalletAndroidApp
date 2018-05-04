@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.ceva.ubmobile.core.signon.newtobank.CustomerDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/step_header"/>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/dateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Monthly Debit Date"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnSub"
+                            style="@style/FormLabels"
+                            android:layout_width="@dimen/icon_36"
+                            android:layout_height="@dimen/icon_36"
+                            android:layout_gravity="center"
+                            android:background="?attr/_ubnColorPrimary"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                        <EditText
+                            android:id="@+id/monthlyDebit"
+                            style="@style/AppTheme.Widget.EditText"
+                            fontPath="@string/font_medium"
+                            android:layout_width="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="number"/>
+
+                        <Button
+                            android:id="@+id/btnAdd"
+                            style="@style/FormLabels"
+                            android:layout_width="@dimen/icon_36"
+                            android:layout_height="@dimen/icon_36"
+                            android:layout_gravity="center"
+                            android:background="?attr/_ubnColorPrimary"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/FormLabels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Initial Deposit"/>
+
+
+                <EditText
+                    android:id="@+id/initialDeposit"
+                    style="@style/AppTheme.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"/>
+
+                <TextView
+                    style="@style/FormLabels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Account"/>
+
+                <Spinner
+                    android:id="@+id/account"
+                    style="@style/AppTheme.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_height"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    style="@style/AppTheme.Widget.Button"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Back"/>
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/btnProceed"
+                    style="@style/AppTheme.Widget.Button"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Proceed"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

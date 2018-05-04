@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_existing_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ceva.ubmobile.core.signon.ExistingUser"
+    tools:showIn="@layout/activity_existing_user">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/standard_page_margin"
+            android:layout_marginRight="@dimen/standard_page_margin"
+            android:layout_marginTop="@dimen/margin_from_button"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please select your primary account"/>
+
+                <RadioGroup
+                    android:id="@+id/usernameGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/edit_padding"
+                    android:layout_marginTop="@dimen/edit_padding"
+                    android:orientation="vertical">
+
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/edit_padding"
+                    android:layout_marginTop="@dimen/edit_padding"
+                    android:background="@color/asbestos"/>
+
+                <LinearLayout
+                    android:id="@+id/password_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New transaction PIN"/>
+
+                    <EditText
+                        android:id="@+id/tran_pin"
+                        style="@style/AppTheme.Widget.EditText"
+                        android:ems="10"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"/>
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Confirm new transaction PIN"/>
+
+                    <EditText
+                        android:id="@+id/conftranpin"
+                        style="@style/AppTheme.Widget.EditText"
+                        android:ems="10"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_from_button"
+                    android:text="Submit"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

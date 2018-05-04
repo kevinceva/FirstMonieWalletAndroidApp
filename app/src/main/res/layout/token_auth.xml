@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/token_auth"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/FormLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Authentication Mode"/>
+
+    <RadioGroup
+        android:id="@+id/auth_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_token"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Token Code"/>
+
+        <RadioButton
+            android:id="@+id/rb_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS Code"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/auth_code"
+        style="@style/AppTheme.Widget.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:hint="Enter Token Code"
+        android:inputType="number"/>
+</LinearLayout>

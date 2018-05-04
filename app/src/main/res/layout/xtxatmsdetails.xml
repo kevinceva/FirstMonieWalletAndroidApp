@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/tx_list_background"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <com.zercomsystems.android.unionatmlocator.views.TextViewPlus
+        android:id="@+id/tx_terminal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Head"
+        android:textColor="#3D3D3D"
+        android:textSize="16sp"
+        app:customFont="@string/font_medium"/>
+
+    <com.zercomsystems.android.unionatmlocator.views.TextViewPlus
+        android:id="@+id/tx_terminal_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Description"
+        android:textColor="#8F8F8F"
+        android:textSize="14sp"
+        app:customFont="@string/font_medium"/>
+
+</LinearLayout>

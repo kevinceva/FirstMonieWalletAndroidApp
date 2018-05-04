@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_withback"/>
+
+    <RelativeLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="1dp">
+        <!--<ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+        <FrameLayout
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/page_fields"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_self"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/left_rounded_right_flat_blue_border"
+                        android:button="@android:color/transparent"
+                        android:checked="true"
+                        android:text="Myself"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/textview_bg"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_contacts"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_bg"
+                        android:button="@android:color/transparent"
+                        android:text="My Contacts"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/textview_bg"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_other"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/right_rounded_left_flat_blue_border"
+                        android:button="@android:color/transparent"
+                        android:text="Other"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/textview_bg"/>
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/name_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_48"
+                        android:layout_height="@dimen/icon_48"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_user_phone_blue"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/rectangle_clouds_border"
+                        android:ems="10"
+                        android:hint="Type name of contact"
+                        android:padding="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:orientation="horizontal"
+
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="@dimen/icon_48"
+                        android:layout_height="@dimen/icon_48"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_phone_blue"/>
+
+                    <EditText
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/rectangle_clouds_border"
+                        android:ems="10"
+                        android:hint="@string/mobile_number"
+                        android:inputType="phone"
+                        android:padding="2dp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:gravity="center"
+                        android:text="Self"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="@dimen/icon_48"
+                        android:layout_height="@dimen/icon_48"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_network_blue"/>
+
+                    <Spinner
+                        android:id="@+id/networkOperator"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:entries="@array/dummy_network"
+                        android:padding="@dimen/edit_padding"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="@dimen/icon_48"
+                        android:layout_height="@dimen/icon_48"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_naira_blue"/>
+
+                    <EditText
+                        android:id="@+id/amount"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_clouds_border"
+                        android:ems="10"
+                        android:hint="@string/amount"
+                        android:inputType="numberDecimal"
+                        android:padding="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="@dimen/icon_48"
+                        android:layout_height="@dimen/icon_48"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_wallet_blue"/>
+
+                    <Spinner
+                        android:id="@+id/account"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_clouds_border"
+                        android:entries="@array/dummy_accounts"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_48"
+                        android:layout_height="@dimen/icon_48"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_padlock_blue"/>
+
+                    <EditText
+                        android:id="@+id/pin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_clouds_border"
+                        android:ems="10"
+                        android:hint="Transaction Pin"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"
+                        android:padding="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/confirmation_layout"/>
+
+            <LinearLayout
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/standard_page_margin"
+                android:layout_marginRight="@dimen/standard_page_margin"
+                android:layout_marginTop="@dimen/edit_height"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:textColor="?attr/_ubnColorButtonText"
+                    android:background="?attr/_ubnColorButtonBackground"
+                    android:text="@string/label_cancel"/>
+
+                <Button
+                    android:id="@+id/buttonRecharge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:textColor="?attr/_ubnColorButtonText"
+                    android:background="?attr/_ubnColorButtonBackground"
+                    android:text="@string/label_recharge"/>
+            </LinearLayout>
+        </FrameLayout>
+        <!--</ScrollView>-->
+
+        <include
+            layout="@layout/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/standard_page_margin"
+            android:layout_marginRight="@dimen/standard_page_margin"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

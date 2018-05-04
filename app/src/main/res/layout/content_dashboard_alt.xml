@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ceva.ubmobile.core.ui.DashBoard">
+    <!--tools:showIn="@layout/activity_dashboard_alt"-->
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="5dp">
+
+
+        <ImageView
+            android:id="@+id/greetImage"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:layout_gravity="top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/morning"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_gravity="top|center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="60dp">
+
+            <RelativeLayout
+                android:id="@+id/weather_fields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-10dp"
+                >
+
+                <include
+                    layout="@layout/weather_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/greet_fields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp">
+
+                <TextView
+                    android:id="@+id/timeGreeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Good Afternoon"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/dashboardDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/timeGreeting"
+                    android:layout_centerHorizontal="true"
+                    android:text="July 15, 2016"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/clouds_original"/>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginLeft="@dimen/standard_page_margin"
+            android:layout_marginRight="@dimen/standard_page_margin"
+            android:layout_marginTop="220dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:layout_weight="1.5"
+                android:elevation="4dp"
+
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <android.support.v7.widget.CardView
+                    app:cardElevation="3dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/rd_accounts"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/left_rounded_right_flat_blue_border"
+                            android:button="@android:color/transparent"
+                            android:checked="true"
+                            android:drawablePadding="2dp"
+                            android:drawableTop="@drawable/accounts_state"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Accounts"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/textview_bg"
+                            android:textSize="9sp"/>
+
+
+                        <RadioButton
+                            android:id="@+id/rd_loans"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_bg"
+                            android:button="@android:color/transparent"
+                            android:drawablePadding="2dp"
+                            android:drawableTop="@drawable/loans_state"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Loans"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/textview_bg"
+                            android:textSize="9sp"/>
+
+                        <RadioButton
+                            android:id="@+id/rd_investments"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_bg"
+                            android:button="@android:color/transparent"
+                            android:drawablePadding="2dp"
+                            android:drawableTop="@drawable/invest_state"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Investments"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/textview_bg"
+                            android:textSize="9sp"/>
+
+                        <RadioButton
+                            android:id="@+id/rd_lifestyle"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/right_rounded_left_flat_blue_border"
+                            android:button="@android:color/transparent"
+                            android:drawablePadding="2dp"
+                            android:drawableTop="@drawable/life_state"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Lifestyle"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/textview_bg"
+                            android:textSize="9sp"/>
+
+                    </RadioGroup>
+                </android.support.v7.widget.CardView>
+
+                <!--<include
+                    layout="@layout/smooth_progress"/>-->
+
+
+                <LinearLayout
+                    android:id="@+id/update"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="?attr/_ubnColorDashboardBox"
+                    android:clickable="true"
+                    android:padding="2dp"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_24"
+                        android:layout_height="@dimen/icon_24"
+                        android:layout_gravity="left|center"
+                        android:visibility="gone"
+                        android:layout_margin="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_refresh_black"/>
+
+                    <TextView
+                        fontPath="fonts/GothamRounded-Light.otf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Update Account Balances"
+                        android:textColor="?attr/_ubnColorDashboardBoxText"
+                        tools:ignore="MissingPrefix"/>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle_clouds_border"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvlifestyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle_clouds_border"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvloans"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle_clouds_border"
+                    android:visibility="gone"/>
+                <!--<android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvinvestments"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/rectangle_clouds_border"
+                    android:visibility="gone"/>-->
+
+                <include
+                    layout="@layout/account_charts"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/moreview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="?attr/_ubnColorDashboardBox"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onNewAccountClick"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_24"
+                    android:layout_height="@dimen/icon_24"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_wallet_black"/>
+
+                <TextView
+                    fontPath="fonts/GothamRounded-Light.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_newaccount"
+                    android:textColor="?attr/_ubnColorDashboardBoxText"
+                    tools:ignore="MissingPrefix"/>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/bottom_menu"/>
+        </LinearLayout>
+
+        <include
+            layout="@layout/toolbar"/>
+    </FrameLayout>
+</RelativeLayout>

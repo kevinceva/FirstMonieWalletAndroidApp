@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/transactionDate"
+                ontPath="fonts/GothamRounded-Medium.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/09/2016 Debit"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ubn_black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix"/>
+
+            <TextView
+                android:id="@+id/txLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/ubn_black"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/txLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/ubn_black"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/txLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/ubn_black"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/transactionAmount"
+            fontPath="fonts/GothamRounded-Bold.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="right"
+            android:text="@string/dummy_amount"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="MissingPrefix"
+            />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/clouds"/>
+
+</LinearLayout>

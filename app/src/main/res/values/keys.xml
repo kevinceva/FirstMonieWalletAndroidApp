@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyAAyZn-457RCi4wB3-ewQM-PbcmVOF6MDg</string>
+    <string name="c360_key">wQttwK958K9aCiNDO1FVqA</string>
+    <string name="gmc_key">AIzaSyBzk-9h04wE0uGkpCtBHeNCu8_cn_BS0wA</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.github.pavlospt.CircleView
+        android:layout_marginTop="10dp"
+        app:cv_titleText="i"
+        android:layout_gravity="center"
+        app:cv_titleColor="@color/ubn_blue_alt"
+        app:cv_titleSize="35sp"
+        app:cv_subtitleText=" "
+        app:cv_backgroundColorValue="@android:color/transparent"
+        app:cv_fillColor="@android:color/transparent"
+        app:cv_strokeColorValue="@color/ubn_blue_alt"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@color/ubn_blue_alt"
+        style="@style/FormH1Label"
+        android:gravity="center"
+        android:text="@string/pre_approved_loan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+
+</LinearLayout>

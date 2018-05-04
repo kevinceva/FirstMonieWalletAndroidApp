@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="Show Branches"
+        android:enabled="true"
+        android:icon="@drawable/ic_branch"
+        android:shortcutShortLabel="@string/short_name_branch"
+        android:shortcutLongLabel="@string/short_name_full_branch"
+        android:shortcutDisabledMessage="@string/short_name_disabled_branch">
+        <intent
+            android:action="com.zercomsystems.android.unionatmlocator.VIEW_BRANCHES"
+            android:targetPackage="com.zercomsystems.android.unionatmlocator"
+            android:targetClass="com.zercomsystems.android.unionatmlocator.activities.MapActivity"/>
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="Show ATMs"
+        android:enabled="true"
+        android:icon="@drawable/ic_atm"
+        android:shortcutShortLabel="@string/short_name"
+        android:shortcutLongLabel="@string/short_name_full"
+        android:shortcutDisabledMessage="@string/short_name_disabled">
+        <intent
+            android:action="com.zercomsystems.android.unionatmlocator.VIEW_ATMS"
+            android:targetPackage="com.zercomsystems.android.unionatmlocator"
+            android:targetClass="com.zercomsystems.android.unionatmlocator.activities.MapActivity"/>
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+
+    <!-- Specify more shortcuts here. -->
+</shortcuts>
+

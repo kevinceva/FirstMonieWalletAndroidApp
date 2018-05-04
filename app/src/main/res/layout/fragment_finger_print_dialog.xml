@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:id="@+id/main"
+                android:layout_height="match_parent"
+                android:background="@color/ubn_blue_alt"
+                tools:context=".core.ui.widgets.FingerPrintDialog">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.mattprecious.swirl.SwirlView
+        android:id="@+id/swirl"
+        android:layout_width="100dp"
+        android:layout_centerInParent="true"
+        android:layout_height="100dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_below="@id/swirl"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch/swipe fingerprint sensor"/>
+
+    <TextView
+        android:textColor="@color/ubn_yellow"
+        android:text="CANCEL"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

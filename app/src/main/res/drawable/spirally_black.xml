@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item
+        android:drawable="#333333"/>-->
+
+    <item>
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+                android:src="@drawable/header_pattern"
+                android:tileMode="repeat" />
+    </item>
+</selector>

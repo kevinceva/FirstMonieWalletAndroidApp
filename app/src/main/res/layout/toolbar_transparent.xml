@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@android:color/transparent"
+    android:navigationIcon="@drawable/ic_back_caret_white"
+    android:titleTextAppearance="@style/AppTheme.Widget.TextView"
+    app:navigationIcon="@drawable/ic_back_caret_white"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:titleTextAppearance="@style/AppTheme.Widget.TextView"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:id="@+id/main_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/main_toolbar_title"
+            fontPath="fonts/GothamRounded-Medium.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="-25dp"
+            android:layout_marginStart="-25dp"
+            android:text="Cardless withdrawals"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="554dp"
+                android:clipToPadding="false"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/feature_pic_blurred"/>
+
+                    <TextView
+                        fontPath="fonts/GothamRounded-Light.otf"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/standard_page_margin"
+                        android:layout_marginRight="@dimen/standard_page_margin"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rectangle_clouds_border"
+                        android:gravity="center"
+                        android:text="Send Money"
+                        android:textColor="@color/clouds"
+                        android:textSize="20sp"/>
+                </FrameLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/transactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="354dp"
+                    android:layout_marginLeft="@dimen/standard_page_margin"
+                    android:layout_marginRight="@dimen/standard_page_margin"
+                    android:layout_marginTop="-30dp"
+                    android:background="@drawable/box_shadow"
+                    android:elevation="10dp"
+                    android:outlineProvider="bounds"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="20dp"/>
+
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/bottom_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginLeft="@dimen/standard_page_margin"
+                android:layout_marginRight="@dimen/standard_page_margin"
+                android:layout_marginTop="-20dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/toolbar_transparent"/>
+</FrameLayout>

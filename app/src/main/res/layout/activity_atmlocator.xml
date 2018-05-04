@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_atmlocator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ceva.ubmobile.core.ui.maps.ATMLocator">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_withback"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="@dimen/standard_page_margin"
+                android:layout_marginRight="@dimen/standard_page_margin"
+                android:layout_marginTop="@dimen/margin_from_button"
+                android:background="@drawable/rounded_rectangle_blue"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_atm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:text="ATMs"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/textview_bg"/>
+
+                <RadioButton
+                    android:id="@+id/rd_branches"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg"
+                    android:button="@android:color/transparent"
+                    android:text="Branches"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/textview_bg"/>
+
+            </RadioGroup>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

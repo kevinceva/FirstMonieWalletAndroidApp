@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_withback"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_from_button">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/standard_page_margin"
+                android:layout_marginRight="@dimen/standard_page_margin"
+                android:layout_marginTop="@dimen/margin_from_button"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rectangle_clouds_border"
+                    android:gravity="center|top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="?attr/_ubnColorPrimary"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            fontPath="fonts/GothamRounded-Bold.otf"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/edit_padding"
+                            android:text="5"
+                            android:textColor="@color/white"
+                            android:textSize="70sp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/textView35"
+                            fontPath="fonts/GothamRounded-Medium.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center|left"
+                            android:text="security question"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_from_button"
+                        android:text="This shall be used for password recovery"/>
+
+                    <RadioGroup
+                        android:id="@+id/usernameGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/custom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/textView38"
+                            style="@style/FormLabels"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Answer"/>
+
+                        <EditText
+                            android:id="@+id/custUser"
+                            style="@style/AppTheme.Widget.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:ems="10"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:layout_marginBottom="@dimen/margin_from_button"
+                        android:layout_marginTop="@dimen/margin_from_button"
+                        android:clickable="true"
+                        android:text="Continue"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

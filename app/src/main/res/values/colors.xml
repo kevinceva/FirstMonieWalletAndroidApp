@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009fdf</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorAccent">@color/union_gold</color>
+    <!-- Union Colours -->
+
+    <color name="ubn_yellow">#fdd835</color>
+    <color name="ubn_black">#333333</color>
+    <color name="ubn_blue_alt">#009fdf</color>
+    <color name="ubn_yellow_material">#fdd835</color>
+    <color name="union_pink">#ec008c</color>
+    <color name="union_purple">#772583</color>
+    <color name="union_green">#00984a</color>
+    <color name="union_gold">#dfb906</color>
+    <color name="union_subheader">#00aeef</color>
+    <color name="union_buttons">#6dcff6</color>
+    <color name="union_corporate">#40c8f4</color>
+    <color name="union_corporate_dark">@color/colorPrimary</color>
+    <color name="union_red">#C0392B</color>
+    <color name="union_brown">#AB955D</color>
+    <color name="union_brown_darker">#78601D</color>
+    <color name="union_black">#212121</color>
+
+    <!--End of Union Colours -->
+    <color name="white">#ffffff</color>
+    <color name="orange">#d35400</color>
+    <color name="midnight_blue">#2c3e50</color>
+    <color name="translucent_midnight_blue">#802c3e50</color>
+    <color name="colorPrimaryOpaque">#9f009fdf</color>
+    <!--<color name="clouds">#ecf0f1</color>-->
+    <color name="clouds_original">#DCDCDC</color>
+    <color name="clouds">#DCDCDC</color>
+    <color name="asbestos">#7f8c8d</color>
+    <color name="silver">#bdc3c7</color>
+    <color name="concrete">#95a5a6</color>
+    <color name="dark_blue">@color/colorPrimary</color>
+    <array name="bar_colors">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimary</item>
+    </array>
+    <color name="frame">@android:color/black</color>
+    <color name="apptheme_color">#33b5e5</color>
+    <color name="inset">#9000</color>
+    <color name="widget_bg">#80009fdf</color>
+    <color name="gradient_blue_light">#00adee</color>
+    <color name="gradient_blue_dark">#1b75bb</color>
+    <color name="text_black">#414041</color>
+    <color name="secondary_text">#757575</color>
+    <color name="divider_color">#bdbdbd</color>
+    <color name="dark_blue_true">#0083B8</color>
+</resources>
+    <!--<resources>
+        <color name="colorPrimary">#3FAFEF</color>
+        <color name="colorPrimaryDark">#00aeed</color>
+        <color name="colorAccent">@color/ubn_yellow</color>
+        <color name="white">#ffffff</color>
+        <color name="clouds">#ecf0f1</color>
+        <color name="asbestos">#7f8c8d</color>
+        <color name="silver">#bdc3c7</color>
+        <color name="concrete">#95a5a6</color>
+        <color name="ubn_yellow">#EFD931</color>
+        <color name="ubn_black">#333</color>
+        <color name="ubn_blue_alt">#3FAFEF</color>
+    </resources>-->

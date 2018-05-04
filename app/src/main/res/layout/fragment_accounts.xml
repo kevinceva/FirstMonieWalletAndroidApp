@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/clouds_original"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            fontPath="fonts/GothamRounded-Light.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:gravity="left|center"
+            android:padding="2dp"
+            android:text="Update Account Balances"
+            tools:ignore="MissingPrefix"/>
+
+        <ImageView
+            android:layout_width="@dimen/icon_24"
+            android:layout_height="@dimen/icon_24"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="-24dp"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_refresh_black"/>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCards"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/rectangle_clouds_border"/>
+
+    <LinearLayout
+        android:id="@+id/moreview"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@color/clouds_original"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onNewAccountClick"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            fontPath="fonts/GothamRounded-Light.otf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:gravity="left|center"
+            android:padding="2dp"
+            android:text="@string/label_newaccount"
+            tools:ignore="MissingPrefix"/>
+
+        <ImageView
+            android:layout_width="@dimen/icon_24"
+            android:layout_height="@dimen/icon_24"
+            android:layout_marginLeft="-24dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_wallet_black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

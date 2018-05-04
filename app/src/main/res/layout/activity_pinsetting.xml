@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_withback"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/standard_page_margin"
+                android:layout_marginRight="@dimen/standard_page_margin"
+                android:layout_marginTop="@dimen/margin_from_button"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center|top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="@dimen/margin_from_button"
+                        android:background="?attr/_ubnColorPrimary"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            fontPath="fonts/GothamRounded-Bold.otf"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/edit_padding"
+                            android:text="4"
+                            android:textColor="@color/white"
+                            android:textSize="70sp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/textView35"
+                            fontPath="fonts/GothamRounded-Medium.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center|left"
+                            android:text="PIN Setting"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Create Password"/>
+
+                    <EditText
+                        android:id="@+id/pass"
+                        style="@style/AppTheme.Widget.EditText"
+                        android:ems="10"
+                        android:hint="Enter new password"
+                        android:inputType="textPassword"/>
+
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Confirm Password"/>
+
+                    <EditText
+                        android:id="@+id/confpass"
+                        style="@style/AppTheme.Widget.EditText"
+                        android:ems="10"
+                        android:hint="Re-enter password"
+                        android:inputType="textPassword"/>
+
+                    <LinearLayout
+                        android:id="@+id/password_fields"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView39"
+                            style="@style/FormLabels"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Create Transaction PIN"/>
+
+                        <EditText
+                            android:id="@+id/tranpin"
+                            style="@style/AppTheme.Widget.EditText"
+                            android:ems="10"
+                            android:hint="Enter transaction pin"
+                            android:inputType="numberPassword"
+                            android:maxLength="4"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tranPinTxt"
+                        style="@style/FormLabels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Confirm Transaction PIN"/>
+
+                    <EditText
+                        android:id="@+id/conftranpin"
+                        style="@style/AppTheme.Widget.EditText"
+                        android:ems="10"
+                        android:hint="Re-enter transaction pin"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"/>
+
+                    <Button
+                        android:id="@+id/button"
+                        style="@style/AppTheme.Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_from_button"
+                        android:clickable="true"
+                        android:onClick="onContinueClick"
+                        android:text="Continue"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_no_internet_connection">Please check your internet settings</string>
+    <string name="error_json_exception">JSON Exception</string>
+    <string name="error_404">Error 404</string>
+    <string name="error_500">@string/error_server</string>
+    <string name="error_same_account">Same account transfers are not permitted</string>
+    <string name="error">Error!</string>
+    <string name="success">Success!</string>
+    <string name="notice">Notice</string>
+    <string name="error_no_saved_beneficiaries">You do not have any saved beneficiaries.</string>
+    <string name="prompt_save_beneficiaries">You do not have any saved beneficiaries. Would you like to add one now?</string>
+    <string name="error_enter_token">Please enter the 6 digit token key.</string>
+    <string name="error_server">Sorry, there was a problem while processing your request, please try again later.</string>
+    <string name="prompt_start_date">Please select the date you would like the scheduled transfers to commence.</string>
+    <string name="prompt_end_date">Please select the date you would like the scheduled transfers to complete.</string>
+    <string name="prompt_frequency">Please select the frequency of the scheduled transfers.</string>
+    <string name="prompt_name_invite">Please enter the name of the person you wish to invite.</string>
+    <string name="prompt_phone_invite">Please enter the number of the person you wish to invite.</string>
+    <string name="app_update_link">https://play.google.com/store/apps/details?id=com.ceva.ubmobile</string>
+    <string name="error_generic">An internal error occurred. Please try again. If this problem persists, contact the bank.</string>
+    <string name="error_account">Debit and credit account should not be the same.</string>
+    <string name="error_no_amount">Please enter amount</string>
+
+</resources>

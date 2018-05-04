@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "686578687954",
+    "firebase_url": "https://unionbank-144808.firebaseio.com",
+    "project_id": "unionbank-144808",
+    "storage_bucket": "unionbank-144808.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686578687954:android:26e105e86928aa0c",
+        "android_client_info": {
+          "package_name": "com.ceva.ubmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686578687954-be8imvatmn2tao62gdmaiqlvorfsamup.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ceva.ubmobile",
+            "certificate_hash": "5cea5ee6193d9e9f38a97ed78a94bec6c6281e3b"
+          }
+        },
+        {
+          "client_id": "686578687954-gi0p2f1basp79sbh2nhro139lak1fob1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAyZn-457RCi4wB3-ewQM-PbcmVOF6MDg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686578687954-gi0p2f1basp79sbh2nhro139lak1fob1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686578687954:android:89ee571b2c28a7d9",
+        "android_client_info": {
+          "package_name": "com.ceva.ubmobile.stallion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686578687954-gi0p2f1basp79sbh2nhro139lak1fob1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAyZn-457RCi4wB3-ewQM-PbcmVOF6MDg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686578687954:android:19b02534078f4258",
+        "android_client_info": {
+          "package_name": "com.ceva.ubmobile.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686578687954-gi0p2f1basp79sbh2nhro139lak1fob1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAyZn-457RCi4wB3-ewQM-PbcmVOF6MDg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
