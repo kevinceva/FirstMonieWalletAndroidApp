@@ -77,7 +77,6 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@color/union_gold"
                 android:gravity="center"
                 android:text="Back"/>
 
@@ -93,7 +92,6 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@color/union_gold"
                 android:text="Proceed"/>
         </LinearLayout>
     </FrameLayout>

@@ -194,7 +194,7 @@
 
                     <Button
                         android:id="@+id/buttonCancel"
-                        style="@style/AppTheme.Widget.Button"
+
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="4dp"
@@ -204,7 +204,7 @@
 
                     <Button
                         android:id="@+id/buttonRecharge"
-                        style="@style/AppTheme.Widget.Button"
+
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="4dp"

@@ -90,7 +90,7 @@
 
                 <Button
                     android:id="@+id/btnDecline"
-                    style="@style/AppTheme.Widget.Button"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -100,7 +100,7 @@
 
                 <Button
                     android:id="@+id/button6"
-                    style="@style/AppTheme.Widget.Button"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"

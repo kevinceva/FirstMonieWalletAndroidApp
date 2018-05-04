@@ -281,9 +281,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     android:layout_weight="1"
-                    android:textColor="?attr/_ubnColorButtonText"
                     android:background="?attr/_ubnColorButtonBackground"
-                    android:text="@string/label_cancel"/>
+                    android:text="@string/label_cancel"
+                    android:textColor="?attr/_ubnColorButtonText"/>
 
                 <Button
                     android:id="@+id/buttonRecharge"
@@ -291,9 +291,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     android:layout_weight="1"
-                    android:textColor="?attr/_ubnColorButtonText"
                     android:background="?attr/_ubnColorButtonBackground"
-                    android:text="@string/label_recharge"/>
+                    android:text="@string/label_recharge"
+                    android:textColor="?attr/_ubnColorButtonText"/>
             </LinearLayout>
         </FrameLayout>
         <!--</ScrollView>-->

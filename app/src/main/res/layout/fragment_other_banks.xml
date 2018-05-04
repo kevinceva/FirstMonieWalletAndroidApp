@@ -2,8 +2,8 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:orientation="vertical"
              android:focusableInTouchMode="true"
+             android:orientation="vertical"
              tools:context="com.ceva.ubmobile.core.ui.transfers.LinkedAccounts">
 
     <ScrollView
@@ -30,6 +30,7 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/rounded_rectangle_blue"
                     android:orientation="horizontal">
+
                     <RadioButton
                         android:id="@+id/rd_newBen"
                         android:layout_width="wrap_content"
@@ -37,10 +38,11 @@
                         android:layout_weight="1"
                         android:background="@drawable/button_bg"
                         android:button="@android:color/transparent"
-                        android:text="New Beneficiary"
                         android:checked="true"
+                        android:text="New Beneficiary"
                         android:textAlignment="center"
                         android:textColor="@drawable/textview_bg"/>
+
                     <RadioButton
                         android:id="@+id/rd_savedBen"
                         android:layout_width="wrap_content"
@@ -58,12 +60,12 @@
 
                 <TextView
                     android:id="@+id/textView9"
+                    style="@style/FormLabels"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_margin="2dp"
-                    android:text="From"
-                    style="@style/FormLabels"/>
+                    android:text="From"/>
 
                 <Spinner
                     android:id="@+id/tx_accounts_from"
@@ -77,18 +79,18 @@
 
                 <LinearLayout
                     android:id="@+id/saved_fields"
-                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility="gone">
 
                     <TextView
                         android:id="@+id/textView10"
+                        style="@style/FormLabels"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:text="Beneficiary Account"
-                        style="@style/FormLabels"/>
+                        android:text="Beneficiary Account"/>
 
                     <com.ceva.ubmobile.core.ui.widgets.CustomSearchableSpinner
                         android:id="@+id/tx_accounts_to"
@@ -99,6 +101,7 @@
                         android:padding="@dimen/edit_padding"
                         android:spinnerMode="dropdown"/>
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/new_fields"
                     android:layout_width="match_parent"
@@ -108,11 +111,11 @@
 
                     <TextView
                         android:id="@+id/textView"
+                        style="@style/FormLabels"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:text="Beneficiary Account Number"
-                        style="@style/FormLabels"/>
+                        android:text="Beneficiary Account Number"/>
 
                     <EditText
                         android:id="@+id/txaccountNo"
@@ -128,9 +131,9 @@
 
 
                     <TextView
+                        style="@style/FormLabels"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="@style/FormLabels"
                         android:text="@string/form_beneficiary_bank"/>
 
                     <com.ceva.ubmobile.core.ui.widgets.CustomSearchableSpinner
@@ -143,12 +146,12 @@
 
                 <TextView
                     android:id="@+id/textView11"
+                    style="@style/FormLabels"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_margin="2dp"
-                    android:text="Amount"
-                    style="@style/FormLabels"/>
+                    android:text="Amount"/>
 
                 <EditText
                     android:id="@+id/txamount"
@@ -164,12 +167,12 @@
 
                 <TextView
                     android:id="@+id/textView12"
+                    style="@style/FormLabels"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_margin="2dp"
-                    android:text="@string/payment_desc"
-                    style="@style/FormLabels"/>
+                    android:text="@string/payment_desc"/>
 
 
                 <EditText
@@ -181,41 +184,46 @@
                     android:padding="@dimen/edit_padding"
 
                     android:textSize="13sp"/>
+
                 <Switch
-                    android:padding="@dimen/edit_padding"
-                    android:visibility="gone"
-                    android:text="Schedule Transfer?"
+                    android:id="@+id/schedule_switch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/schedule_switch"/>
-                <CheckBox
-                    android:layout_width="match_parent"
                     android:padding="@dimen/edit_padding"
-                    android:text="Save beneficiary"
+                    android:text="Schedule Transfer?"
+                    android:visibility="gone"/>
+
+                <CheckBox
                     android:id="@+id/save_ben_chk"
-                    android:layout_height="@dimen/edit_height"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:padding="@dimen/edit_padding"
+                    android:text="Save beneficiary"/>
+
                 <LinearLayout
+                    android:id="@+id/schedule_fields"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:visibility="gone"
-                    android:id="@+id/schedule_fields">
+                    android:visibility="gone">
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/asbestos"
-                        android:layout_marginTop="2dp"
                         android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/asbestos"
                         />
+
                     <TextView
                         android:id="@+id/textView13"
+                        style="@style/FormLabels"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="2dp"
-                        android:text="Payment Start Date"
-                        style="@style/FormLabels"/>
+                        android:text="Payment Start Date"/>
+
                     <EditText
                         android:id="@+id/fromDate"
                         android:layout_width="match_parent"
@@ -224,16 +232,17 @@
                         android:focusable="false"
                         android:gravity="center|left"
 
-                        android:padding="@dimen/edit_padding"
                         android:hint="From Date"
+                        android:padding="@dimen/edit_padding"
                         android:textSize="13sp"/>
+
                     <TextView
                         android:id="@+id/textView14"
+                        style="@style/FormLabels"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:text="Payment Stop Date"
-                        style="@style/FormLabels"/>
+                        android:text="Payment Stop Date"/>
 
                     <EditText
                         android:id="@+id/toDate"
@@ -245,24 +254,26 @@
                         android:hint="To Date"
                         android:padding="@dimen/edit_padding"
                         android:textSize="13sp"/>
+
                     <TextView
                         android:id="@+id/textView16"
+                        style="@style/FormLabels"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:text="Frequency"
-                        style="@style/FormLabels"/>
+                        android:text="Frequency"/>
 
                     <Spinner
                         android:id="@+id/frequency"
-                        android:background="@drawable/rectangle_clouds_border"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/edit_height"
                         android:layout_weight="1"
+                        android:background="@drawable/rectangle_clouds_border"
                         android:entries="@array/payment_frequency"
                         android:gravity="center|left"
                         android:textSize="13sp"/>
                 </LinearLayout>
+
                 <include layout="@layout/transaction_pin_entry"/>
 
             </LinearLayout>

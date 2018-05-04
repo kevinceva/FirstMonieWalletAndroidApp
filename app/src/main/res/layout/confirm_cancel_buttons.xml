@@ -11,11 +11,11 @@
 
     <Button
         android:id="@+id/btncancel"
-        style="@style/AppTheme.Widget.Button"
+
         android:layout_width="0dp"
         android:layout_weight="1"
-        android:text="@string/label_cancel"
         android:background="?attr/_ubnColorButtonBackground"
+        android:text="@string/label_cancel"
         android:textColor="?attr/_ubnColorButtonText"/>
 
     <View
@@ -24,13 +24,13 @@
         android:background="@android:color/transparent"/>
 
     <Button
-        android:background="?attr/_ubnColorButtonBackground"
-        android:textColor="?attr/_ubnColorButtonText"
         android:id="@+id/btnContinue"
-        style="@style/AppTheme.Widget.Button"
         android:layout_width="0dp"
         android:layout_weight="1"
-        android:text="@string/label_continue"/>
+
+        android:background="?attr/_ubnColorButtonBackground"
+        android:text="@string/label_continue"
+        android:textColor="?attr/_ubnColorButtonText"/>
 
 
 </LinearLayout>

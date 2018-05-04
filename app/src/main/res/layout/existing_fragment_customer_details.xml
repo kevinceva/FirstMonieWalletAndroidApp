@@ -116,7 +116,7 @@
 
                 <Button
                     android:id="@+id/btnBack"
-                    style="@style/AppTheme.Widget.Button"
+
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -130,7 +130,7 @@
 
                 <Button
                     android:id="@+id/btnProceed"
-                    style="@style/AppTheme.Widget.Button"
+
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"

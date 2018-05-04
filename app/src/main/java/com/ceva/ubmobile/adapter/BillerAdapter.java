@@ -5,6 +5,7 @@ package com.ceva.ubmobile.adapter;
  */
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,7 @@ import com.amulyakhare.textdrawable.TextDrawable;
 import com.amulyakhare.textdrawable.util.ColorGenerator;
 import com.ceva.ubmobile.R;
 import com.ceva.ubmobile.models.BillerModel;
+import com.ceva.ubmobile.utils.ImageUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -107,7 +109,7 @@ public class BillerAdapter extends RecyclerView.Adapter<BillerAdapter.MyViewHold
 
             ColorGenerator generator = ColorGenerator.MATERIAL; // or use DEFAULT
             //int color1 = generator.getRandomColor();
-            int color = context.getResources().getColor(R.color.colorPrimary);
+            int color = ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark, Color.BLUE);
             // declare the builder object once.
             TextDrawable.IBuilder builder = TextDrawable.builder()
                     .beginConfig()

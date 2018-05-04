@@ -50,7 +50,7 @@
 
         <Button
             android:id="@+id/btnSubmit"
-            style="@style/AppTheme.Widget.Button"
+
             android:layout_width="250dp"
             android:layout_height="@dimen/edit_height"
             android:layout_marginTop="10dp"

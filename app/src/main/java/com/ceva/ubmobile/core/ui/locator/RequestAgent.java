@@ -43,6 +43,7 @@ import com.ceva.ubmobile.network.ApiInterface;
 import com.ceva.ubmobile.network.GeoAPIClient;
 import com.ceva.ubmobile.network.NetworkUtils;
 import com.ceva.ubmobile.security.UBNSession;
+import com.ceva.ubmobile.utils.ImageUtils;
 import com.ceva.ubmobile.utils.ScalingUtilities;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
@@ -303,7 +304,7 @@ public class RequestAgent extends BaseActivity implements
             public void onClick(View view) {
                 Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_warning_white_48, getResources());
                 new LovelyStandardDialog(RequestAgent.this)
-                        .setTopColorRes(R.color.union_red)
+                        .setTopColor(ImageUtils.getColorByThemeAttr(RequestAgent.this,R.attr._ubnColorPrimaryDark, Color.BLUE))
                         .setButtonsColorRes(R.color.midnight_blue)
                         .setIcon(icon)
                         .setTitle("Confirmation")
@@ -751,7 +752,7 @@ public class RequestAgent extends BaseActivity implements
                                     confirmRequest.setText("waiting...");
                                     String text = "There are no agents available at the moment. Would you like to wait or cancel the request?";
                                     new LovelyStandardDialog(RequestAgent.this)
-                                            .setTopColorRes(R.color.colorPrimary)
+                                            .setTopColor(ImageUtils.getColorByThemeAttr(RequestAgent.this,R.attr._ubnColorPrimaryDark,Color.BLUE))
                                             .setButtonsColorRes(R.color.midnight_blue)
                                             .setIcon(R.drawable.ic_bulb_white)
                                             .setTitle("INFO")
@@ -777,7 +778,7 @@ public class RequestAgent extends BaseActivity implements
                         session.setString(KEY_COMMON_ID, null);
                         session.setString(KEY_LAT, null);
                         new LovelyStandardDialog(RequestAgent.this)
-                                .setTopColorRes(R.color.colorPrimary)
+                                .setTopColor(ImageUtils.getColorByThemeAttr(RequestAgent.this,R.attr._ubnColorPrimaryDark,Color.BLUE))
                                 .setButtonsColorRes(R.color.midnight_blue)
                                 .setIcon(R.drawable.ic_bulb_white)
                                 .setTitle("INFO")

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mattprecious.swirl:swirl-1.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/swirl-1.1.0.aar/96eecae9d69c557dc812e38fe3fa09ed/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/swirl-1.1.0.aar/96eecae9d69c557dc812e38fe3fa09ed/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mattprecious.swirl/swirl/1.1.0/145f7d10530cdb4e6748084e59a9fb22d243e92d/swirl-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

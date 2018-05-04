@@ -1,6 +1,7 @@
 package com.ceva.ubmobile.core.ui.bankservices;
 
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.view.View;
@@ -24,6 +25,7 @@ import com.ceva.ubmobile.network.ApiInterface;
 import com.ceva.ubmobile.network.NetworkUtils;
 import com.ceva.ubmobile.security.SecurityLayer;
 import com.ceva.ubmobile.security.UBNSession;
+import com.ceva.ubmobile.utils.ImageUtils;
 import com.ceva.ubmobile.utils.NumberUtilities;
 import com.ceva.ubmobile.utils.ScalingUtilities;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
@@ -129,7 +131,7 @@ public class CancelToken extends BaseActivity {
                             } else {
                                 Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_bulb_white, getResources());
                                 new LovelyStandardDialog(CancelToken.this)
-                                        .setTopColorRes(R.color.colorPrimary)
+                                        .setTopColor(ImageUtils.getColorByThemeAttr(CancelToken.this,R.attr._ubnColorPrimaryDark, Color.BLUE))
                                         .setButtonsColorRes(R.color.midnight_blue)
                                         .setIcon(icon)
                                         .setTitle("Confirm")

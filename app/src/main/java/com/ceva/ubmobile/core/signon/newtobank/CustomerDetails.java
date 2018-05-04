@@ -4,6 +4,7 @@ package com.ceva.ubmobile.core.signon.newtobank;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -34,6 +35,7 @@ import com.ceva.ubmobile.network.ApiInterface;
 import com.ceva.ubmobile.network.NetworkUtils;
 import com.ceva.ubmobile.security.SecurityLayer;
 import com.ceva.ubmobile.security.UBNSession;
+import com.ceva.ubmobile.utils.ImageUtils;
 import com.ceva.ubmobile.utils.ScalingUtilities;
 import com.github.pinball83.maskededittext.MaskedEditText;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
@@ -477,7 +479,7 @@ public class CustomerDetails extends Fragment {
 
                         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_bulb_white, getResources());
                         new LovelyStandardDialog(getContext())
-                                .setTopColorRes(R.color.colorPrimary)
+                                .setTopColor(ImageUtils.getColorByThemeAttr(getContext(),R.attr._ubnColorPrimaryDark,Color.BLUE))
                                 .setButtonsColorRes(R.color.midnight_blue)
                                 .setIcon(icon)
                                 .setTitle("Are these your details?")
@@ -569,7 +571,7 @@ public class CustomerDetails extends Fragment {
                         //content += "\nPhone Number: " + mobile;
                         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_bulb_white, getResources());
                         new LovelyStandardDialog(getContext())
-                                .setTopColorRes(R.color.colorPrimary)
+                                .setTopColor(ImageUtils.getColorByThemeAttr(getContext(),R.attr._ubnColorPrimaryDark, Color.BLUE))
                                 .setButtonsColorRes(R.color.midnight_blue)
                                 .setIcon(icon)
                                 .setTitle("Are these your details?")
@@ -597,7 +599,7 @@ public class CustomerDetails extends Fragment {
 
                         /*Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_bulb_white, getResources());
                         new LovelyStandardDialog(getContext())
-                                .setTopColorRes(R.color.colorPrimary)
+                                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
                                 .setButtonsColorRes(R.color.midnight_blue)
                                 .setIcon(icon)
                                 .setTitle("Are these your details?")

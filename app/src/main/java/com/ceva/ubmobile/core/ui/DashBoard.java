@@ -64,6 +64,7 @@ import com.ceva.ubmobile.network.ApiInterface;
 import com.ceva.ubmobile.security.SecurityLayer;
 import com.ceva.ubmobile.security.UBNSession;
 import com.ceva.ubmobile.security.Utility;
+import com.ceva.ubmobile.utils.ImageUtils;
 import com.ceva.ubmobile.utils.NumberUtilities;
 import com.ceva.ubmobile.utils.ScalingUtilities;
 import com.github.mikephil.charting.charts.PieChart;
@@ -361,7 +362,7 @@ public class DashBoard extends BaseActivity
                         if (UBNApplication.isBioPresent()) {
                             Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_fingerprint_white, getResources());
                             new LovelyStandardDialog(DashBoard.this)
-                                    .setTopColorRes(R.color.colorPrimary)
+                                    .setTopColor(ImageUtils.getColorByThemeAttr(DashBoard.this,R.attr._ubnColorPrimaryDark,Color.BLUE))
                                     .setButtonsColorRes(R.color.midnight_blue)
                                     .setIcon(icon)
                                     .setTitle("Fingerprint Login")
@@ -413,7 +414,7 @@ public class DashBoard extends BaseActivity
         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_bulb_white, getResources());
         //final Context context = this;
         new LovelyStandardDialog(this)
-                .setTopColorRes(R.color.colorPrimary)
+                .setTopColor(ImageUtils.getColorByThemeAttr(DashBoard.this,R.attr._ubnColorPrimaryDark,Color.BLUE))
                 .setButtonsColorRes(R.color.midnight_blue)
                 .setIcon(icon)
                 .setTitle("Pre-Approved Loan")

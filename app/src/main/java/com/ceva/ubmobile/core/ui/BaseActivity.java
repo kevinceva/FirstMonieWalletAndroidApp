@@ -90,6 +90,7 @@ import com.ceva.ubmobile.security.ScreenReceiver;
 import com.ceva.ubmobile.security.SecurityLayer;
 import com.ceva.ubmobile.security.UBNSession;
 import com.ceva.ubmobile.security.Utility;
+import com.ceva.ubmobile.utils.ImageUtils;
 import com.ceva.ubmobile.utils.ScalingUtilities;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.yarolegovich.lovelydialog.LovelyProgressDialog;
@@ -565,7 +566,7 @@ public abstract class BaseActivity extends AppCompatActivity {
             mProgressDialog.setIcon(scaledBitmap)
                     .setTitle("Processing Request")
                     .setTitleGravity(Gravity.CENTER)
-                    .setTopColorRes(R.color.colorPrimary)
+                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
                     .show();
         } catch (Exception e) {
 
@@ -608,7 +609,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         mProgressDialog.setIcon(scaledBitmap)
                 .setTitle(message)
                 .setTitleGravity(Gravity.CENTER)
-                .setTopColorRes(R.color.colorPrimary)
+                .setTopColor(ImageUtils.getColorByThemeAttr(getApplicationContext(),R.attr._ubnColorPrimaryDark,Color.BLUE))
                 .show();
     }
 
@@ -631,7 +632,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         mProgressDialog.setIcon(scaledBitmap)
                 .setTitle(message)
                 .setTitleGravity(Gravity.CENTER)
-                .setTopColorRes(R.color.colorPrimary)
+                .setTopColor(ImageUtils.getColorByThemeAttr(this,R.attr._ubnColorPrimaryDark,Color.BLUE))
                 .show();
     }
 
@@ -1311,7 +1312,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 Log.debug("contact not existing");
                 Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_bulb_white, getResources());
                 new LovelyStandardDialog(this)
-                        .setTopColorRes(R.color.colorPrimary)
+                        .setTopColor(ImageUtils.getColorByThemeAttr(getApplicationContext(),R.attr._ubnColorPrimaryDark,Color.BLUE))
                         .setButtonsColorRes(R.color.midnight_blue)
                         .setIcon(icon)
                         .setTitle("ATTENTION")
@@ -1440,7 +1441,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void logOutDialog() {
         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_bulb_white, getResources());
         new LovelyStandardDialog(this)
-                .setTopColorRes(R.color.colorPrimary)
+                .setTopColor(ImageUtils.getColorByThemeAttr(getApplicationContext(),R.attr._ubnColorPrimaryDark,Color.BLUE))
                 .setButtonsColorRes(R.color.midnight_blue)
                 .setIcon(icon)
                 .setTitle("Exit")
@@ -1513,7 +1514,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void updateDialog(String content) {
         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_bulb_white, getResources());
         new LovelyStandardDialog(this)
-                .setTopColorRes(R.color.colorPrimary)
+                .setTopColor(ImageUtils.getColorByThemeAttr(getApplicationContext(),R.attr._ubnColorPrimaryDark,Color.BLUE))
                 .setButtonsColorRes(R.color.midnight_blue)
                 .setIcon(icon)
                 .setTitle("Update Available")

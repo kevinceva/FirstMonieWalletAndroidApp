@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.roughike:swipe-selector-1.0.6">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/swipe-selector-1.0.6.aar/43e9db285ef7b0838f6e01d8a2a455e7/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/swipe-selector-1.0.6.aar/43e9db285ef7b0838f6e01d8a2a455e7/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.roughike/swipe-selector/1.0.6/744be30260320861f11eab901e0a2307e2e7ee5b/swipe-selector-1.0.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.roughike/swipe-selector/1.0.6/7eb0593ac6568a755a974b4118ca6d1d0a8ef4c0/swipe-selector-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

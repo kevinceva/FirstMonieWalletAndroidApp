@@ -4,6 +4,7 @@ package com.ceva.ubmobile.core.ui.beneficiaries;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.IdRes;
@@ -34,6 +35,7 @@ import com.ceva.ubmobile.network.ApiInterface;
 import com.ceva.ubmobile.network.NetworkUtils;
 import com.ceva.ubmobile.security.SecurityLayer;
 import com.ceva.ubmobile.security.UBNSession;
+import com.ceva.ubmobile.utils.ImageUtils;
 import com.ceva.ubmobile.utils.ScalingUtilities;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -172,7 +174,7 @@ public class Beneficiaries extends BaseActivity implements View.OnClickListener 
 
                 Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_transfers_white, getResources());
                 new LovelyStandardDialog(context)
-                        .setTopColorRes(R.color.colorPrimary)
+                        .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark, Color.BLUE))
                         .setButtonsColorRes(R.color.midnight_blue)
                         .setIcon(icon)
                         .setTitle("Confirmation Required!")
@@ -373,7 +375,7 @@ public class Beneficiaries extends BaseActivity implements View.OnClickListener 
                     }
 
                     new LovelyStandardDialog(context)
-                            .setTopColorRes(color)
+                            .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
                             .setButtonsColorRes(R.color.midnight_blue)
                             .setIcon(icon)
                             .setTitle(status)

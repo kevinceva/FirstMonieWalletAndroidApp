@@ -23,10 +23,10 @@
                 <include layout="@layout/step_header"/>
 
                 <TextView
-                    android:layout_marginTop="20dp"
                     style="@style/FormLabels"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="@string/initial_deposit_amount"/>
 
                 <EditText
@@ -34,6 +34,7 @@
                     style="@style/AppTheme.Widget.EditText"
                     android:layout_width="match_parent"
                     android:inputType="number"/>
+
                 <TextView
                     android:id="@+id/genderTxt"
                     style="@style/FormLabels"
@@ -182,7 +183,7 @@
 
             <Button
                 android:id="@+id/btnBack"
-                style="@style/AppTheme.Widget.Button"
+
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center|left"
@@ -196,7 +197,7 @@
 
             <Button
                 android:id="@+id/btnProceed"
-                style="@style/AppTheme.Widget.Button"
+
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center|right"

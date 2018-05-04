@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -471,7 +472,7 @@ public class Sign_In extends BaseActivity implements ImageUtils.ImageAttachmentL
                                             //show pop up
                                             Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_bulb_white, getResources());
                                             new LovelyStandardDialog(Sign_In.this)
-                                                    .setTopColorRes(R.color.colorPrimary)
+                                                    .setTopColor(ImageUtils.getColorByThemeAttr(getApplicationContext(),R.attr._ubnColorPrimaryDark, Color.BLUE))
                                                     .setButtonsColorRes(R.color.midnight_blue)
                                                     .setIcon(icon)
                                                     .setTitle("Device Replacement")

@@ -80,7 +80,7 @@
 
                     <Button
                         android:id="@+id/btnBack"
-                        style="@style/AppTheme.Widget.Button"
+
                         android:layout_width="150dp"
                         android:layout_height="@dimen/edit_height"
                         android:layout_gravity="center|left"
@@ -91,7 +91,7 @@
 
                     <Button
                         android:id="@+id/btnProceed"
-                        style="@style/AppTheme.Widget.Button"
+
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center|right"

@@ -2,6 +2,7 @@ package com.ceva.ubmobile.core.ui.merchantpayments;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -33,6 +34,7 @@ import com.ceva.ubmobile.network.NetworkUtils;
 import com.ceva.ubmobile.security.SecurityLayer;
 import com.ceva.ubmobile.security.UBNSession;
 import com.ceva.ubmobile.security.Utility;
+import com.ceva.ubmobile.utils.ImageUtils;
 import com.ceva.ubmobile.utils.NumberUtilities;
 import com.ceva.ubmobile.utils.ScalingUtilities;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
@@ -325,7 +327,7 @@ public class RevPayConfirm extends BaseActivity {
                         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_check_circle_white, getResources());
                         final JSONObject finalObj = obj;
                         new LovelyStandardDialog(RevPayConfirm.this)
-                                .setTopColorRes(R.color.colorPrimary)
+                                .setTopColor(ImageUtils.getColorByThemeAttr(getApplicationContext(),R.attr._ubnColorPrimaryDark, Color.BLUE))
                                 .setButtonsColorRes(R.color.midnight_blue)
                                 .setIcon(icon)
                                 .setTitle("Success")

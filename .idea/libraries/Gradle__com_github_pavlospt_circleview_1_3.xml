@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.pavlospt:circleview-1.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circleview-1.3.aar/054343117d7de1fce65927e8dfea41bb/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circleview-1.3.aar/054343117d7de1fce65927e8dfea41bb/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.pavlospt/circleview/1.3/85c7c5ad7baec56bc4ed9d69b7d8634bd33ba9a4/circleview-1.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.pavlospt/circleview/1.3/1d966fec21c1bfbf459a6453217acd62652c7f80/circleview-1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

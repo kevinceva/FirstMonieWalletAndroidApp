@@ -2,6 +2,7 @@ package com.ceva.ubmobile.core.lifestyle.deals;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -29,6 +30,7 @@ import com.ceva.ubmobile.network.ApiInterface;
 import com.ceva.ubmobile.network.NetworkUtils;
 import com.ceva.ubmobile.security.SecurityLayer;
 import com.ceva.ubmobile.security.UBNSession;
+import com.ceva.ubmobile.utils.ImageUtils;
 import com.ceva.ubmobile.utils.ScalingUtilities;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
@@ -206,7 +208,7 @@ public class HomePageDetails extends BaseActivity {
                     if (obj.optString(Constants.KEY_CODE).equals("00")) {
                         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_check_circle_white, getResources());
                         new LovelyStandardDialog(HomePageDetails.this)
-                                .setTopColorRes(R.color.colorPrimary)
+                                .setTopColor(ImageUtils.getColorByThemeAttr(HomePageDetails.this,R.attr._ubnColorPrimaryDark, Color.BLUE))
                                 .setButtonsColorRes(R.color.midnight_blue)
                                 .setIcon(icon)
                                 .setTitle("Success")

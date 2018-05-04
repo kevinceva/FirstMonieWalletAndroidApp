@@ -32,6 +32,7 @@ import com.ceva.ubmobile.network.ApiClientString;
 import com.ceva.ubmobile.network.ApiInterface;
 import com.ceva.ubmobile.security.SecurityLayer;
 import com.ceva.ubmobile.security.UBNSession;
+import com.ceva.ubmobile.utils.ImageUtils;
 import com.ceva.ubmobile.utils.NumberUtilities;
 import com.ceva.ubmobile.utils.TinyDB;
 import com.google.android.gms.location.DetectedActivity;
@@ -191,7 +192,7 @@ public class ATMLocator extends BaseActivity implements
             startLocation();
         } else {
             new LovelyStandardDialog(this)
-                    .setTopColorRes(R.color.orange)
+                    .setTopColor(ImageUtils.getColorByThemeAttr(ATMLocator.this,R.attr._ubnColorPrimaryDark, Color.BLUE))
                     .setButtonsColorRes(R.color.midnight_blue)
                     .setIcon(R.drawable.ic_warning_white_48)
                     .setTitle("Location disabled")

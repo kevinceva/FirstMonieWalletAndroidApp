@@ -507,7 +507,7 @@ public class WalletToWallet extends Fragment {
 
                         /*if (isBenChecked) {
                             new LovelyStandardDialog(context)
-                                    .setTopColorRes(R.color.colorPrimary)
+                                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
                                     .setButtonsColorRes(R.color.midnight_blue)
                                     .setIcon(R.drawable.ic_check_circle_white)
                                     .setTitle(getString(R.string.success))
@@ -876,7 +876,7 @@ public class WalletToWallet extends Fragment {
 
                         /*if (isBenChecked) {
                             new LovelyStandardDialog(context)
-                                    .setTopColorRes(R.color.colorPrimary)
+                                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
                                     .setButtonsColorRes(R.color.midnight_blue)
                                     .setIcon(R.drawable.ic_check_circle_white)
                                     .setTitle(getString(R.string.success))

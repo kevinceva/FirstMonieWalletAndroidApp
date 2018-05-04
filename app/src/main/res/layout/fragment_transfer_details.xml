@@ -10,66 +10,66 @@
         android:id="@+id/receipt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:scrollbars="none">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
+            <!-- TODO: Update blank fragment layout -->
             <RelativeLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_margin="10dp"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/ubn_logo"
-                    android:layout_gravity="top|right"
                     android:layout_width="70dp"
-                    android:layout_height="70dp"/>
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ubn_logo"/>
             </RelativeLayout>
 
 
             <TextView
-                android:text="Receipt Details"
                 style="@style/FormH1Label"
-                android:gravity="center"
-                android:textColor="?attr/_ubnColorPrimary"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Receipt Details"
+                android:textColor="?attr/_ubnColorPrimary"/>
 
-    <android.support.v7.widget.RecyclerView
-        android:padding="15dp"
-        android:id="@+id/confirm_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/loadingLayout"
-        android:layout_marginBottom="60dp"
-        android:layout_marginTop="10dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/confirm_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loadingLayout"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"/>
         </LinearLayout>
 
     </ScrollView>
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:gravity="center|bottom"
-        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="@dimen/standard_page_margin"
         android:layout_marginRight="@dimen/standard_page_margin"
-        android:layout_marginBottom="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_marginTop="10dp"
+        android:gravity="center|bottom"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnDownload"
-            android:text="Download"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="@dimen/edit_height"/>
+            android:layout_height="@dimen/edit_height"
+            android:layout_weight="1"
+            android:text="Download"/>
 
         <android.support.v4.widget.Space
             android:layout_width="10dp"
@@ -77,18 +77,18 @@
 
         <Button
             android:id="@+id/btnShare"
-            android:text="Share"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="@dimen/edit_height"/>
+            android:layout_height="@dimen/edit_height"
+            android:layout_weight="1"
+            android:text="Share"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/btnClose"
         android:layout_width="@dimen/icon_36"
         android:layout_height="@dimen/icon_36"
-        android:layout_marginTop="25dp"
         android:layout_marginLeft="@dimen/standard_page_margin"
-        android:gravity="top|left"
-        android:background="@drawable/ic_close_black_24dp"/>
+        android:layout_marginTop="25dp"
+        android:background="@drawable/ic_close_black_24dp"
+        android:gravity="top|left"/>
 </FrameLayout>

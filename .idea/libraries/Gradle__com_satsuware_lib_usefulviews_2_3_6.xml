@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.satsuware.lib:usefulviews-2.3.6">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/usefulviews-2.3.6.aar/b308c95afc8842bab3b7d86af84e57ba/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/usefulviews-2.3.6.aar/b308c95afc8842bab3b7d86af84e57ba/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.satsuware.lib/usefulviews/2.3.6/a6493b44a7b419c7ab9f2a500cf0529ddbb0ae88/usefulviews-2.3.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.satsuware.lib/usefulviews/2.3.6/e5bf46da466b7dd8b1e79624919117bbefff3684/usefulviews-2.3.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

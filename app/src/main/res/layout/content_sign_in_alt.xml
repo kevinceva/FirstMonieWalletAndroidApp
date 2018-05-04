@@ -25,9 +25,9 @@
 
             <ScrollView
                 android:id="@+id/login_fields"
-                android:visibility="visible"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="visible">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -272,39 +272,39 @@
 
                     <android.support.v7.widget.SwitchCompat
                         android:id="@+id/loginSwitch"
-                        android:text="Use password instead"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginTop="40dp"
-                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="10dp"
                         android:layout_marginLeft="@dimen/standard_page_margin"
                         android:layout_marginRight="@dimen/standard_page_margin"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:text="Use password instead"
                         android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:layout_gravity="center|bottom"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:textSize="16sp"/>
                 </RelativeLayout>
             </LinearLayout>
 
             <android.support.v7.widget.SwitchCompat
                 android:id="@+id/bioSwitch"
-                android:text="Enable Fingerprint Authentication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="80dp"
-                android:gravity="center"
                 android:layout_marginLeft="@dimen/standard_page_margin"
                 android:layout_marginRight="@dimen/standard_page_margin"
+                android:layout_marginTop="80dp"
+                android:gravity="center"
+                android:text="Enable Fingerprint Authentication"
                 android:textColor="@color/white"
-                android:textSize="16sp"
-                android:layout_gravity="center|bottom"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:textSize="16sp"/>
 
             <RelativeLayout
-                android:layout_gravity="top"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="top">
 
                 <ImageView
                     android:id="@+id/btnHome"

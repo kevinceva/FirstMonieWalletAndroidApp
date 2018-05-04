@@ -1,6 +1,7 @@
 package com.ceva.ubmobile.core.signon;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -20,6 +21,7 @@ import com.ceva.ubmobile.network.ApiInterface;
 import com.ceva.ubmobile.network.NetworkUtils;
 import com.ceva.ubmobile.security.UBNSession;
 import com.ceva.ubmobile.security.Utility;
+import com.ceva.ubmobile.utils.ImageUtils;
 import com.roughike.swipeselector.SwipeItem;
 import com.roughike.swipeselector.SwipeSelector;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
@@ -169,7 +171,7 @@ public class NewUser extends BaseActivity {
                         //showOTPField();
 
                         new LovelyStandardDialog(NewUser.this)
-                                .setTopColorRes(R.color.colorPrimary)
+                                .setTopColor(ImageUtils.getColorByThemeAttr(getApplicationContext(),R.attr._ubnColorPrimaryDark, Color.BLUE))
                                 .setButtonsColorRes(R.color.midnight_blue)
                                 .setIcon(R.drawable.ic_bulb_white)
                                 .setTitle("Confirmation")

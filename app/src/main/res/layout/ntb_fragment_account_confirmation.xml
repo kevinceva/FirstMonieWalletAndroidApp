@@ -95,7 +95,7 @@
 
                     <Button
                         android:id="@+id/btnProceed"
-                        style="@style/AppTheme.Widget.Button"
+
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center|right"
