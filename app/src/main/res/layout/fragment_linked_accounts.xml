@@ -37,7 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/edit_height"
                     android:layout_gravity="center_vertical"
-                    android:background="@drawable/spin_patch"
+                    android:background="@drawable/rectangle_clouds_border"
                     android:entries="@array/dummy_accounts"
                     android:padding="@dimen/edit_padding"
                     android:spinnerMode="dropdown"/>
@@ -57,7 +57,7 @@
                     android:layout_height="@dimen/edit_height"
                     android:layout_gravity="center_vertical"
                     android:entries="@array/dummy_accounts"
-
+                    android:background="@drawable/rectangle_clouds_border"
                     android:padding="@dimen/edit_padding"
                     android:spinnerMode="dropdown"/>
 

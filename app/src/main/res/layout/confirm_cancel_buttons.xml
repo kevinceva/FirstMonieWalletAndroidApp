@@ -11,7 +11,7 @@
 
     <Button
         android:id="@+id/btncancel"
-
+        android:layout_height="@dimen/edit_height"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:background="?attr/_ubnColorButtonBackground"
@@ -24,10 +24,10 @@
         android:background="@android:color/transparent"/>
 
     <Button
+        android:layout_height="@dimen/edit_height"
         android:id="@+id/btnContinue"
         android:layout_width="0dp"
         android:layout_weight="1"
-
         android:background="?attr/_ubnColorButtonBackground"
         android:text="@string/label_continue"
         android:textColor="?attr/_ubnColorButtonText"/>

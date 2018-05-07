@@ -23,6 +23,7 @@ import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.MediaStore;
+import android.support.annotation.ColorInt;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
@@ -34,6 +35,7 @@ import android.util.TypedValue;
 import android.widget.Toast;
 
 import com.baoyz.actionsheet.ActionSheet;
+import com.ceva.ubmobile.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -727,10 +729,15 @@ public class ImageUtils {
     }
 
     public static int getColorByThemeAttr(Context context, int attr, int defaultColor) {
-        TypedValue typedValue = new TypedValue();
+        /*TypedValue typedValue = new TypedValue();
         Resources.Theme theme = context.getTheme();
         boolean got = theme.resolveAttribute(attr, typedValue, true);
-        return got ? typedValue.data : defaultColor;
+        return got ? typedValue.data : defaultColor;*/
+        TypedValue typedValue = new TypedValue();
+        Resources.Theme theme = context.getTheme();
+        theme.resolveAttribute(attr, typedValue, true);
+        @ColorInt int color = typedValue.data;
+        return color;
     }
 
 }

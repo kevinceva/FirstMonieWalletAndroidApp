@@ -85,7 +85,14 @@
         <item name="android:layout_height">45dp</item>
         <item name="android:layout_width">match_parent</item>
     </style>
-
+    <style name="AppTheme.ParentButton" parent="android:style/Widget.Button">
+        <item name="fontPath">fonts/GothamRounded-Light.otf</item>
+        <item name="android:textColor">?attr/_ubnColorButtonText</item>
+        <item name="android:background">?attr/_ubnColorButtonBackground</item>
+        <item name="android:layout_height">@dimen/edit_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/edit_padding</item>
+    </style>
     <style name="AppTheme.Widget.Button" parent="android:style/Widget.Button">
         <item name="fontPath">fonts/GothamRounded-Light.otf</item>
         <item name="android:textColor">?attr/_ubnColorButtonText</item>
@@ -94,12 +101,9 @@
         <item name="android:padding">@dimen/edit_padding</item>
     </style>
 
-    <style name="AppTheme.BrownTheme.Button" parent="Widget.AppCompat.Button">
-        <item name="fontPath">fonts/GothamRounded-Light.otf</item>
+    <style name="AppTheme.BrownTheme.Button" parent="AppTheme.ParentButton">
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@color/union_black</item>
-        <item name="android:layout_height">@dimen/edit_height</item>
-        <item name="android:padding">@dimen/edit_padding</item>
     </style>
 
     <style name="AppTheme.Widget.Spinner" parent="Widget.AppCompat.Spinner">
