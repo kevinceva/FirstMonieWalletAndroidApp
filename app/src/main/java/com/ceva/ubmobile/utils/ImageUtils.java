@@ -735,7 +735,34 @@ public class ImageUtils {
      * @param defaultColor
      * @return
      */
+    @Deprecated
     public static int getColorByThemeAttr(Context context, int attr, int defaultColor) {
+        /*TypedValue typedValue = new TypedValue();
+        Resources.Theme theme = context.getTheme();
+        boolean got = theme.resolveAttribute(attr, typedValue, true);
+        return got ? typedValue.data : defaultColor;*/
+
+        try {
+            TypedValue typedValue = new TypedValue();
+            Resources.Theme theme = context.getTheme();
+            theme.resolveAttribute(attr, typedValue, true);
+            @ColorInt int color = typedValue.data;
+            return color;
+        } catch (Exception e) {
+            Activity activity = (Activity) context;
+            @ColorInt int color = activity.getResources().getColor(R.color.colorPrimary);
+            return color;
+        }
+
+    }
+
+    /**
+     *
+     * @param context
+     * @param attr
+     * @return
+     */
+    public static int getColorByThemeAttr(Context context, int attr) {
         /*TypedValue typedValue = new TypedValue();
         Resources.Theme theme = context.getTheme();
         boolean got = theme.resolveAttribute(attr, typedValue, true);

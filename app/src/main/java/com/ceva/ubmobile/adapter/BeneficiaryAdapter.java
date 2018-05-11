@@ -147,13 +147,14 @@ public class BeneficiaryAdapter extends RecyclerView.Adapter<BeneficiaryAdapter.
 
             ColorGenerator generator = ColorGenerator.MATERIAL; // or use DEFAULT
             //int color1 = generator.getRandomColor();
-            int color = ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark, Color.BLUE);
+            int color = ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark);
             // declare the builder object once.
             TextDrawable.IBuilder builder = TextDrawable.builder()
                     .beginConfig()
                     .withBorder(4)
                     .endConfig()
                     .round();
+
             TextDrawable ic1 = builder.build(String.valueOf(name.charAt(0)), color);
             benefbank.setTextColor(color);
             fancy.setImageDrawable(ic1);

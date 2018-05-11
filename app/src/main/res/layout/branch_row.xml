@@ -31,7 +31,7 @@
             android:layout_gravity="center|right"
             android:padding="@dimen/edit_padding"
             android:scaleType="fitXY"
-            android:src="@drawable/ic_arrowforward_blue"/>
+            android:src="@drawable/ic_arrowforward"/>
     </LinearLayout>
 
     <View

@@ -584,7 +584,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ceva.ubmobile.core.ui.cards.CardManagement"/>
         </activity>
-        <activity android:name=".core.ui.LandingPage">
+        <activity android:name=".core.ui.LandingPage"
+            android:theme="@style/Theme.UnionBlue">
         </activity>
         <activity
             android:name=".core.lifestyle.deals.HomePageDeals"

@@ -32,7 +32,7 @@ public class ResponseDialogs {
     public static void success(String title, String content, final Context context) {
         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_check_circle_white, context.getResources());
         new LovelyStandardDialog(context)
-                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE)))
+                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark)))
                 .setButtonsColorRes(R.color.midnight_blue)
                 .setIcon(icon)
                 .setTitle(title)
@@ -56,7 +56,7 @@ public class ResponseDialogs {
         }
         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_check_circle_white, context.getResources());
         new LovelyStandardDialog(context)
-                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                 .setButtonsColorRes(R.color.midnight_blue)
                 .setIcon(icon)
                 .setTitle(title)
@@ -71,7 +71,7 @@ public class ResponseDialogs {
         }
         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_warning_white_48, context.getResources());
         new LovelyStandardDialog(context)
-                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                 .setButtonsColorRes(R.color.midnight_blue)
                 .setIcon(icon)
                 .setTitle(title)
@@ -96,7 +96,7 @@ public class ResponseDialogs {
         }
         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_warning_white_48, context.getResources());
         new LovelyStandardDialog(context)
-                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimary,Color.BLUE))
+                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimary))
                 //.setTopColor(R.attr._ubnColorPrimaryDark)
                 .setButtonsColorRes(R.color.midnight_blue)
                 .setIcon(icon)
@@ -127,7 +127,7 @@ public class ResponseDialogs {
         if (context != null) {
             Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_bulb_white, context.getResources());
             new LovelyStandardDialog(context)
-                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                     .setButtonsColorRes(R.color.midnight_blue)
                     .setIcon(icon)
                     .setTitle(title)
@@ -184,7 +184,7 @@ public class ResponseDialogs {
             }
             Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_warning_white_48, context.getResources());
             new LovelyStandardDialog(context)
-                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                     .setButtonsColorRes(R.color.midnight_blue)
                     .setIcon(icon)
                     .setTitle(title)
@@ -198,7 +198,7 @@ public class ResponseDialogs {
         if (context != null) {
             Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_gsm_signal_white, context.getResources());
             new LovelyStandardDialog(context)
-                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                     .setButtonsColorRes(R.color.midnight_blue)
                     .setIcon(icon)
                     .setTitle("Network Error")
@@ -212,7 +212,7 @@ public class ResponseDialogs {
         if (context != null) {
             Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_check_circle_white, context.getResources());
             new LovelyStandardDialog(context)
-                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                     .setButtonsColorRes(R.color.midnight_blue)
                     .setIcon(icon)
                     .setTitle(title)
@@ -239,7 +239,7 @@ public class ResponseDialogs {
             }
             Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_warning_white_48, context.getResources());
             new LovelyStandardDialog(context)
-                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                     .setButtonsColorRes(R.color.midnight_blue)
                     .setIcon(icon)
                     .setTitle(title)
@@ -265,7 +265,7 @@ public class ResponseDialogs {
             }
             Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_warning_shield_white, context.getResources());
             new LovelyStandardDialog(context)
-                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                     .setButtonsColorRes(R.color.midnight_blue)
                     .setIcon(icon)
                     .setTitle(title)
@@ -282,7 +282,7 @@ public class ResponseDialogs {
             }
             Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_warning_shield_white, context.getResources());
             new LovelyStandardDialog(context)
-                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                     .setButtonsColorRes(R.color.midnight_blue)
                     .setIcon(icon)
                     .setTitle(title)
@@ -305,7 +305,7 @@ public class ResponseDialogs {
             }
             Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_warning_shield_white, context.getResources());
             new LovelyStandardDialog(context)
-                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                    .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                     .setButtonsColorRes(R.color.midnight_blue)
                     .setIcon(icon)
                     .setTitle(title)
@@ -327,7 +327,7 @@ public class ResponseDialogs {
         }
         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_warning_shield_white, context.getResources());
         new LovelyStandardDialog(context)
-                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                 .setButtonsColorRes(R.color.midnight_blue)
                 .setIcon(icon)
                 .setTitle(title)
@@ -350,7 +350,7 @@ public class ResponseDialogs {
     public static void sucessDialogLovelyToActivity(final Context context, String title, String message, final Class activity) {
         Bitmap icon = ScalingUtilities.iconBitmap(R.drawable.ic_check_circle_white, context.getResources());
         new LovelyStandardDialog(context)
-                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                 .setButtonsColorRes(R.color.midnight_blue)
                 .setIcon(icon)
                 .setTitle(title)
@@ -367,7 +367,7 @@ public class ResponseDialogs {
 
     public static void infoToActivity(String title, String content, final Context context, final Class activity, final Bundle bundle) {
         new LovelyStandardDialog(context)
-                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark,Color.BLUE))
+                .setTopColor(ImageUtils.getColorByThemeAttr(context,R.attr._ubnColorPrimaryDark))
                 .setButtonsColorRes(R.color.midnight_blue)
                 .setIcon(R.drawable.ic_bulb_white)
                 .setTitle(title)

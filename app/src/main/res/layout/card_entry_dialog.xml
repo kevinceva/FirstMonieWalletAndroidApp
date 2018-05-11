@@ -24,7 +24,7 @@
         android:layout_margin="2dp"
         android:gravity="center"
         android:text="@string/make_payment"
-        android:textColor="@color/ubn_blue_alt"/>
+        android:textColor="?attr/_ubnColorPrimaryDark"/>
 
     <TextView
         fontPath="@string/font_medium"
@@ -170,7 +170,6 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="@dimen/margin_from_button"
             android:layout_weight="1"
-            android:background="@color/ubn_yellow"
             android:padding="@dimen/edit_padding"
             android:text="Pay"/>
     </LinearLayout>

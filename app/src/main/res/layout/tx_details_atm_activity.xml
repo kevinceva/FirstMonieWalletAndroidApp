@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="70"
-        android:background="@drawable/tx_map_details_gradient">
+        android:background="@drawable/sweet_blue_gradient">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -62,7 +62,7 @@
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
                         android:text="Take me there"
-                        android:textColor="?attr/_ubnColorPrimary"
+                        android:textColor="@color/ubn_blue_alt"
                         android:textSize="18sp"
                         app:customFont="@string/font_medium"/>
 

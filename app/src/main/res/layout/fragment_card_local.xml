@@ -142,6 +142,7 @@
                     <ImageView
                         android:layout_width="@dimen/icon_36"
                         android:layout_height="@dimen/icon_36"
+                        android:tint="?attr/_ubnColorPrimaryDark"
                         android:scaleType="fitXY"
                         android:src="@drawable/ic_dot_in_rectangle"
                         />
@@ -168,6 +169,7 @@
                         android:layout_width="@dimen/icon_36"
                         android:layout_height="@dimen/icon_36"
                         android:scaleType="fitXY"
+                        android:tint="?attr/_ubnColorPrimaryDark"
                         android:src="@drawable/ic_arrow_in_rectangle"
                         />
 

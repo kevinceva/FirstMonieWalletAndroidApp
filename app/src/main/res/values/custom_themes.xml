@@ -56,6 +56,7 @@
         <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
         <item name="swirl_ridgeColor">@color/white</item>
         <item name="swirl_errorColor">@color/orange</item>
+        <item name="android:buttonStyle">@style/AppTheme.ParentButton</item>
     </style>
 
     <style name="MyMaterialTheme.Base.TransparentStatus" parent="Theme.AppCompat.Light.NoActionBar">
@@ -93,11 +94,8 @@
         <item name="_ubnColorPrimaryDark">@color/dark_blue_true</item>
         <item name="_ubnColorButtonBackground">@color/union_gold</item>
         <item name="_ubnColorButtonText">@color/union_black</item>
-        <item name="android:buttonStyle">@style/AppTheme.Widget.Button</item>
-        <item name="_ubnColorDashboardBox">@color/union_black</item>
-        <item name="_ubnColorDashboardBoxText">@color/white</item>
-        <item name="colorButtonNormal">@color/union_gold</item>
-        <item name="colorControlHighlight">@color/ubn_yellow</item>
+        <item name="_ubnColorDashboardBox">@color/clouds</item>
+        <item name="_ubnColorDashboardBoxText">@color/union_black</item>
     </style>
 
     <!-- Union Brown -->
@@ -113,11 +111,25 @@
         <item name="_ubnColorPrimaryDark">@color/union_brown_darker</item>
         <item name="_ubnColorButtonBackground">@color/union_black</item>
         <item name="_ubnColorButtonText">@color/white</item>
-        <item name="android:buttonStyle">@style/AppTheme.BrownTheme.Button</item>
         <item name="_ubnColorDashboardBox">@color/union_black</item>
         <item name="_ubnColorDashboardBoxText">@color/white</item>
-        <item name="colorButtonNormal">@color/union_black</item>
-        <item name="colorControlHighlight">@color/asbestos</item>
+    </style>
+
+    <!-- Union Green -->
+    <style name="Theme.UnionGreen" parent="MyMaterialTheme.Base">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/union_green</item>
+        <item name="colorPrimaryDark">@color/union_green_darker</item>
+        <item name="colorAccent">@color/union_green</item>
+        <item name="_ubnColorPrimary">@color/union_green</item>
+        <item name="_ubnColorPrimaryDark">@color/union_green_darker</item>
+        <item name="_ubnColorButtonBackground">@color/union_green</item>
+        <item name="_ubnColorButtonText">@color/white</item>
+        <item name="_ubnColorDashboardBox">@color/clouds</item>
+        <item name="_ubnColorDashboardBoxText">@color/union_black</item>
     </style>
 
 

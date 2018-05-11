@@ -4,8 +4,8 @@
         <item>
             <shape>
                 <gradient
-                    android:endColor="@color/gradient_blue_light"
-                    android:startColor="@color/gradient_blue_dark"
+                    android:endColor="?attr/_ubnColorPrimary"
+                    android:startColor="?attr/_ubnColorPrimaryDark"
                     android:angle="90"/>
             </shape>
         </item>

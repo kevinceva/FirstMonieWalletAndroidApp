@@ -11,7 +11,10 @@
     <color name="ubn_yellow_material">#fdd835</color>
     <color name="union_pink">#ec008c</color>
     <color name="union_purple">#772583</color>
-    <color name="union_green">#00984a</color>
+    <color name="union_green">#50B848</color>
+    <color name="union_green_darker">#00984A</color>
+    <!--<color name="union_green">#00bf9a</color>
+    <color name="union_green_darker">#008975</color>-->
     <color name="union_gold">#dfb906</color>
     <color name="union_subheader">#00aeef</color>
     <color name="union_buttons">#6dcff6</color>

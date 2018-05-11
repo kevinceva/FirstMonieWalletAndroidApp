@@ -48,7 +48,7 @@
         <View
             android:layout_width="0.5dp"
             android:layout_height="match_parent"
-            android:background="#00B2EE"/>
+            android:background="?attr/_ubnColorPrimaryDark"/>
 
         <LinearLayout
             android:id="@+id/login"
@@ -147,6 +147,7 @@
                 android:layout_height="@dimen/icon_36"
                 android:layout_gravity="center"
                 android:layout_margin="2dp"
+                android:tint="?attr/_ubnColorPrimaryDark"
                 android:src="@drawable/kelechi_agent"
                 />
 
@@ -191,6 +192,7 @@
                     android:layout_width="@dimen/icon_36"
                     android:layout_height="@dimen/icon_36"
                     android:layout_gravity="center"
+                    android:tint="?attr/_ubnColorPrimaryDark"
                     android:src="@drawable/kelechi_cart"
                     />
 
@@ -241,6 +243,7 @@
                 android:layout_width="@dimen/icon_36"
                 android:layout_height="@dimen/icon_36"
                 android:layout_gravity="center"
+                android:tint="?attr/_ubnColorPrimaryDark"
                 android:layout_margin="2dp"
                 android:src="@drawable/kelechi_news"
                 />
@@ -285,6 +288,7 @@
                 android:layout_width="@dimen/icon_36"
                 android:layout_height="@dimen/icon_36"
                 android:layout_gravity="center"
+                android:tint="?attr/_ubnColorPrimaryDark"
                 android:layout_margin="2dp"
                 android:src="@drawable/kelechi_atm"
                 />
@@ -323,6 +327,7 @@
                 android:layout_width="@dimen/icon_36"
                 android:layout_height="@dimen/icon_36"
                 android:layout_gravity="center"
+                android:tint="?attr/_ubnColorPrimaryDark"
                 android:layout_margin="2dp"
                 android:src="@drawable/kelechi_phone"
                 />
@@ -361,6 +366,7 @@
                 android:layout_width="@dimen/icon_36"
                 android:layout_height="@dimen/icon_36"
                 android:layout_gravity="center"
+                android:tint="?attr/_ubnColorPrimaryDark"
                 android:layout_margin="2dp"
                 android:src="@drawable/kelechi_weather"
                 />

@@ -284,10 +284,8 @@
                 android:id="@+id/btnContinue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/ubn_yellow"
                 android:elevation="2.0dp"
-                android:text="@string/label_continue"
-                android:textColor="@color/ubn_black"/>
+                android:text="@string/label_continue"/>
         </LinearLayout>
 
     </ScrollView>

@@ -68,7 +68,7 @@
                 <Button
                     android:id="@+id/btnSubmit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/edit_height"
                     android:layout_marginTop="@dimen/margin_from_button"
                     android:text="Send Invite"/>
             </LinearLayout>

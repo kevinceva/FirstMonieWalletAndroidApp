@@ -129,7 +129,6 @@
                     android:layout_height="@dimen/edit_height"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:background="@color/ubn_yellow"
                     android:gravity="center"
                     android:text="GET COUPON"
                     android:textSize="12sp"/>

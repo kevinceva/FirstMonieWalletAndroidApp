@@ -125,6 +125,7 @@
                         android:layout_width="@dimen/icon_48"
                         android:layout_height="@dimen/icon_48"
                         android:layout_gravity="center_vertical"
+                        android:tint="?attr/_ubnColorPrimaryDark"
                         android:scaleType="fitXY"
                         android:src="@drawable/ic_phone_blue"/>
 
@@ -164,6 +165,7 @@
                         android:layout_width="@dimen/icon_48"
                         android:layout_height="@dimen/icon_48"
                         android:layout_gravity="center_vertical"
+                        android:tint="?attr/_ubnColorPrimaryDark"
                         android:scaleType="fitXY"
                         android:src="@drawable/ic_network_blue"/>
 
@@ -190,6 +192,7 @@
                         android:layout_width="@dimen/icon_48"
                         android:layout_height="@dimen/icon_48"
                         android:layout_gravity="center_vertical"
+                        android:tint="?attr/_ubnColorPrimaryDark"
                         android:src="@drawable/ic_naira_blue"/>
 
                     <EditText
@@ -217,6 +220,7 @@
                         android:id="@+id/imageView11"
                         android:layout_width="@dimen/icon_48"
                         android:layout_height="@dimen/icon_48"
+                        android:tint="?attr/_ubnColorPrimaryDark"
                         android:scaleType="fitXY"
                         android:src="@drawable/ic_wallet_blue"/>
 
@@ -239,6 +243,7 @@
                     android:padding="2dp">
 
                     <ImageView
+                        android:tint="?attr/_ubnColorPrimaryDark"
                         android:layout_width="@dimen/icon_48"
                         android:layout_height="@dimen/icon_48"
                         android:scaleType="fitXY"

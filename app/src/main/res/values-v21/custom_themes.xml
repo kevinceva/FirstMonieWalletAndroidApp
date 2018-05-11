@@ -3,10 +3,11 @@
 
     <style name="AppTheme.Widget.Button" parent="Widget.AppCompat.Button">
         <item name="fontPath">fonts/GothamRounded-Light.otf</item>
-        <item name="android:textColor">@color/ubn_black</item>
-        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">?attr/_ubnColorButtonText</item>
+        <item name="android:background">?attr/_ubnColorButtonBackground</item>
         <item name="android:layout_height">@dimen/edit_height</item>
-        <item name="android:elevation">3dp</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:padding">@dimen/edit_padding</item>
+        <item name="android:minHeight">@dimen/edit_height</item>
     </style>
 </resources>

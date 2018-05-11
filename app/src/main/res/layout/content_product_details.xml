@@ -286,7 +286,7 @@
         <ImageView
             android:layout_width="@dimen/icon_40"
             android:layout_height="match_parent"
-            android:background="@color/dark_blue_true"
+            android:background="?attr/_ubnColorPrimaryDark"
             android:src="@drawable/ic_shopping_bag_white"/>
 
         <TextView

@@ -112,8 +112,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/edit_height"
                         android:layout_gravity="center|bottom"
-
-                        android:background="@color/clouds"
                         android:elevation="5dp"
                         android:gravity="center"
                         android:text="View full statement"/>
